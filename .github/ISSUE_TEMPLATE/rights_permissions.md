@@ -16,7 +16,6 @@ permission to redistribute the original assets is assumed.
 
 @scienceandresearch
 
-This issue is visible to anyone with repository access and will be public if
-the repository is made public. Do not post confidential contracts, identity
-documents, personal email addresses or original game assets here. A suitable
-private channel can be agreed upon for detailed verification or terms.
+Please use this issue for initial contact only. Keep confidential documents
+and personal contact details out of the thread; we can arrange a private
+follow-up to discuss permissions.

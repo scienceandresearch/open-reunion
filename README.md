@@ -1,117 +1,79 @@
 # Open Reunion
 
-An unofficial, AI-assisted fan recreation of **Reunion (1994)**, also known as
-**Merit's Galactic Reunion**, implemented in Python.
+A fan-made recreation of **Reunion (1994)**, also known as **Merit's Galactic Reunion**, written in Python for modern computers.
 
-This project began with a childhood memory: spending hours playing Reunion with
-a friend, never reaching the ending, and returning every few years to try again.
-After repeated difficulties getting the old game running reliably, rebuilding
-it became a way to revisit that experience and finally finish the campaign.
-AI made it possible to take on a project that otherwise would have been out of
-reach. The aim is to preserve the game we remember and make it easier to play
-on a modern computer, with a few practical improvements along the way.
+I grew up playing Reunion with a friend. We spent hours on it but never managed to beat it. Every few years I'd come back and try again, usually spending as much time getting it to run as I did playing it. Eventually I decided to rebuild it, with help from AI, so I could finally finish the game.
 
-This is a fan project, not an official release or an endorsed continuation.
-The original developers and artists created the world, story, imagery and music
-that make Reunion memorable. This repository contains the new implementation,
-local import tools, tests and optional campaign checkpoints. **It does not
-include the original game executable, artwork, music or converted asset bundle.**
-The implementation was reconstructed from original behavior, executable/data
-analysis and documented progression; it is not a clean-room implementation.
+Open Reunion keeps the original game's look and core gameplay, with some small improvements to make it easier to play. You can play the campaign from New Game through the ending: build colonies, research technology, explore other systems, negotiate with alien civilizations, and fight in space and on the ground. It's still a beta, and I'd love to hear how it plays for you.
 
-## What works
+**You'll need your own copy of the original English game.** This repository includes the new engine and an importer, but no original artwork, music, sound effects or game executable.
 
-The graphical game connects New Game, colonies, economy, research, production,
-exploration, diplomacy, fleets, cargo, equipment, space and ground battles,
-story sequences, save/load and the ending. An automated unassisted graphical
-campaign has completed a fresh game through victory. That verifies one full
-route; it does not establish perfect original parity or eliminate every bug.
-This remains a playable beta, and player feedback is welcome.
+## Getting started
 
-Quality-of-life additions include resource assistance through an optional admin
-console, time controls, named saves, clearer attack notices, and faster quantity
-adjustments. Admin changes mark a campaign as assisted. The optional checkpoint
-collection provides another way to explore later parts of the game.
+The repository contains the source code. **There is no prebuilt Windows download on GitHub yet.** You can run the game from source using the steps below, or [build a Windows package](docs/SOURCE-QUICKSTART.md#build-a-windows-package).
 
-## Play
+You'll need Python **3.11 or newer with Tcl/Tk**. Windows supports the full native audio setup.
 
-### Windows package
-
-If a Windows build is provided under this repository's Releases, extract its
-entire ZIP and run **OpenReunion.exe**. On first launch, choose your complete
-original English Reunion folder, wait for import and click **Continue to game**.
-Python and DOSBox do not need to be installed for the packaged build. No
-downloaded release is required to run from source below.
-
-### Run from source
-
-Use Python **3.11 or newer with Tcl/Tk**. Windows is the supported platform for
-live native audio. From the repository folder:
+Clone the repository, or use **Code > Download ZIP** and extract it:
 
 ```powershell
-python run.py --help
+git clone https://github.com/scienceandresearch/open-reunion.git
+cd open-reunion
+```
+
+For full music playback, install the audio libraries. The second command needs `clang` or `cc` on your PATH:
+
+```powershell
 python tools/install_module_audio.py
-python tools/build_audio.py --compiler "C:\Tools\LLVM\bin\clang.exe"
+python tools/build_audio.py
+```
+
+See the [source guide](docs/SOURCE-QUICKSTART.md#audio) if you need to specify a compiler. You can start the game without these libraries, but some music will be missing.
+
+Double-click **Import-Assets.cmd** and choose your original Reunion folder. Wait for the import to finish, then click **Continue to game**. You can also start it from the terminal, replacing the example path with your own:
+
+```powershell
 python run.py import-assets "C:\Games\Reunion" --output local/recovered --play
 ```
 
-The module installer downloads only a pinned open-source audio dependency.
-The FM build command needs a C compiler; the helper also supports Zig and can
-discover `cc` or `clang` on PATH. The game can start without these optional
-libraries, but full music playback requires them. The Windows package already
-contains the libraries and their notices.
-
-For a guided folder picker, double-click **Import-Assets.cmd** instead of the
-last command. After setup, use that launcher again or:
+After setup, use **Import-Assets.cmd** again or run:
 
 ```powershell
 python run.py recover local/recovered --original-ui
 ```
 
-See [quickstart](QUICKSTART.md), [asset import details](docs/ASSET-IMPORT.md) and
-the [player guide](PLAYER-GUIDE.md). **Space** starts/pauses time. **F2** opens
-the optional admin console. Personal saves live under `saves/`, separate from
-the included checkpoints.
+Choose **New Game** and your character. Time starts paused: press **Space** to begin. The [quickstart](QUICKSTART.md) covers the basics, and the [player guide](PLAYER-GUIDE.md) explains the controls in detail.
 
-## Original files
+## Your original game files
 
-You must supply a legally obtained, complete original game folder. The game
-executable alone is insufficient: graphics, animations, text and sound live in
-other files. The importer supports the three English executable builds already
-inspected by this project, with a 288,992-byte `GRWAR/REUNION.PRG` and the original
-`SAVE/INIT`. Other versions and languages require additional analysis.
+Choose the complete, extracted English game folder, including `GRWAR`, `SAVE`, `GRAFIKA`, `INTRO`, `TEXT` and the other asset folders. The executable alone isn't enough. The [import guide](docs/ASSET-IMPORT.md) lists supported versions and explains common setup problems.
 
-If you cannot read your original media, copies may be listed on various sites
-described as abandonware archives. “Abandonware” is not a license or proof of
-permission to download or use a copy. Check the rights and terms that apply to
-you. This project does not host, link to or download original game files.
+The importer works locally and leaves your original files untouched. It doesn't run the DOS program or copy your old player saves. Once setup is complete, the converted files stay in `local/recovered`.
 
-Importing happens locally, never executes the original program, and leaves the
-original files untouched. Imported assets stay under ignored `local/` paths and
-must not be committed or attached to releases. See [content and rights notes](docs/CONTENT-POLICY.md).
+If you can no longer read your original media, copies can be found at various abandonware archives. That label doesn't mean the game is freely licensed; make sure you have permission to use the copy you obtain. This project doesn't supply or download the original files.
 
-## Jump into the campaign
+## A few conveniences
 
-The [23 optional checkpoints](tester-saves/START-HERE.md) cover the opening,
-colony expansion, first contact, Morgrul and League campaigns, Earth and victory.
-Their names and guide contain spoilers. Import the original assets first, then
-use **More Icons > Disk Operations > Load file...** to browse to `tester-saves/`
-(or **Optional Saves** in a Windows package).
+- **Time controls:** start, pause and change speed below the game window.
+- **Named saves:** use **More Icons > Disk Operations > Save file...** to save your progress.
+- **Faster loading and equipment assignment:** use the mouse wheel to adjust quantities or middle-click for the maximum.
+- **Admin console:** press **F2** to add money or resources when you want a helping hand. Using an admin command marks that save as assisted.
 
-These are earned checkpoints from one unassisted automated campaign. Their
-gameplay state is preserved; historical message logs were cleared for this
-source distribution. They are not invincible armies, and later outcomes depend
-on your decisions. Save your own continuation under a new name.
+## Pick up partway through
 
-## Let an agent help
+The repository includes [23 campaign saves](tester-saves/START-HERE.md), from the opening colony to the final battle and victory film. Their names tell you what to expect, and the guide suggests what to do next. Expect spoilers.
 
-Give a coding agent [this setup prompt](docs/AGENT-SETUP-PROMPT.md). It describes
-how to inspect the environment, install dependencies, import your local copy,
-validate the setup and launch the game without obtaining original files for you.
+Import the game assets first, then open **More Icons > Disk Operations > Load file...** and choose a save from `tester-saves`. Save your continuation under a new name. These checkpoints were played without resource assistance; their old message logs have been cleared, but their gameplay state is intact.
 
-## Development and testing
+## Help with setup
 
-No original game assets are needed for the unit suite:
+If you'd rather have a coding agent handle installation, give it [this setup prompt](docs/AGENT-SETUP-PROMPT.md) and the path to your original game folder.
+
+For bugs, open an [issue](https://github.com/scienceandresearch/open-reunion/issues) with the version, the steps that led to the problem, and whether you started a new game or loaded a checkpoint. General feedback is welcome in [Discussions](https://github.com/scienceandresearch/open-reunion/discussions).
+
+## Development
+
+The engine lives in `src/openreunion/dos/`, tests in `tests/`, and build tools in `tools/`. To run the checks:
 
 ```powershell
 $env:PYTHONPATH = "src"
@@ -120,42 +82,12 @@ python tools/check_checkpoints.py
 python tools/audit_repository.py
 ```
 
-Optional checks that need private research evidence may skip. After importing
-content, verify the checkpoint collection against it with:
+These checks don't need the original game files. See [contributing](CONTRIBUTING.md), the [build guide](docs/SOURCE-QUICKSTART.md), and the [project status](status.md) for more.
 
-```powershell
-python tools/check_checkpoints.py --content local/recovered
-```
+## Credits and permissions
 
-The main implementation is under `src/openreunion/dos/`; `session.py` manages
-campaign transactions, `content.py` adapts original/imported data, and
-`original_ui.py` connects the graphical screens. Synthetic regressions live in
-`tests/`. Build and validation helpers live in `tools/`.
+Reunion was created by Amnesty Design, later known as Digital Reality, and published by Grandslam. This is an unofficial fan project, with no affiliation or endorsement from the original creators or rights holders.
 
-See [contributing](CONTRIBUTING.md), [build instructions](docs/SOURCE-QUICKSTART.md)
-and [tested scope](TEST-BUILD.md). GitHub Actions runs the source checks without
-original files. The package builder always excludes original content and
-includes the optional checkpoint collection.
+The new code is available under the [MIT license](LICENSE). Audio dependencies have their own licenses, listed in [THIRD_PARTY.md](THIRD_PARTY.md). The original game's assets and other rights remain with their respective owners. See [content and rights](docs/CONTENT-POLICY.md) for details about the reconstruction and what's included here.
 
-## Credits and license
-
-### A note to the rights holder
-
-If you hold rights to Reunion and would be comfortable allowing the original
-assets to be included with this fan project, I would sincerely welcome hearing
-from you. Being able to offer an authorized, simpler way to revisit the game
-would mean a great deal. No such permission is assumed at present.
-
-Please open a **Rights and permissions** issue through this repository's Issues
-tab, or start a Discussion and mention **@scienceandresearch**. There is no need
-to publish an email address. These are public conversations when the repository
-is public; please do not post contracts, identity documents or other confidential
-material. We can agree on a suitable private channel if needed. While the
-repository is private, these features are available only to invited users.
-
-Reunion was created by Amnesty Design, later known as Digital Reality, and
-published by Grandslam. All original game rights remain with their respective
-holders. The new implementation is offered under [MIT](LICENSE), with separately
-licensed audio components documented in [THIRD_PARTY.md](THIRD_PARTY.md).
-Neither that license nor local asset extraction establishes permission for all
-uses of the original game's intellectual property or branding.
+**To the rights holder:** if you'd be open to allowing the original assets to be distributed with this project, I'd be very glad to hear from you. It would make revisiting the game much simpler. Please open a **Rights and permissions** issue or start a Discussion and mention **@scienceandresearch**. No email address is needed for initial contact; we can arrange a private follow-up for any confidential details.

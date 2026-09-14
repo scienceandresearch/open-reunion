@@ -1,58 +1,62 @@
-# Maintenance handoff
+# Maintainer guide
 
-This repository is the curated `opensource` project. Its earlier misspelled
-folder was renamed; private development assets and history were moved out of
-the repository before Git initialization. The original recreation was accepted
-as complete, with future work driven by player feedback. Do not start another
-full campaign replay for routine documentation or packaging changes.
+Use this guide to find the main systems, check a change, or prepare a build.
+For installation, start with [README.md](README.md). Current test results and
+known issues are in [status.md](status.md).
 
-## Where to work
+## Code map
 
-- `src/openreunion/dos/session.py`: transactional campaign state and saves.
-- `content.py`, `extraction.py`, `asset_import.py`, `import_ui.py`: original/local
-  content adapters, conversion and responsive first-run setup.
-- `original_ui.py` and screen modules: graphical game routes.
-- `tests/`: synthetic regressions; six evidence-only checks skip in clean clones.
-- `tools/`: curated build/import/checkpoint/repository validation tools.
-- `tester-saves/`: reviewed optional campaign collection; personal saves go in
-  ignored `saves/`. Historical original message logs have been removed.
+Most game code lives in `src/openreunion/dos/`:
 
-## Validation and packaging
+- `session.py` manages campaign state, actions and saved games.
+- `content.py` reads original files and converted assets.
+- `extraction.py` and `asset_import.py` handle conversion; `import_ui.py` provides the setup window.
+- `original_ui.py` connects the graphical screens and their controls.
+- `tests/` contains regression tests; `tools/` contains build and validation scripts.
+- `tester-saves/` holds the campaign checkpoints. Player saves go in the ignored `saves/` folder.
 
-Run the README's unit suite, `tools/check_checkpoints.py`, and
-`tools/audit_repository.py --staged` before pushing. The staged audit reads
-Git's index. Keep third-party source and checkpoint bytes stable; .gitattributes
-preserves their hashes across checkout. A modified guide requires updating its
-manifest entry. `prepare_public_checkpoints.py` reproducibly removes only logs
-from a separately supplied original checkpoint collection.
+## Checking changes
 
-For local game validation, import your supported original copy and use
-`tools/check_checkpoints.py --content local/recovered`. The public builder uses
-`--content-bundle` only for local verification and always excludes it from output.
-Use fresh archive/report names. `check_tester_archive.py --original-source ...`
-verifies a real frozen import and graphical checks without Python on PATH.
-Actual audio tests must be muted per process, not by changing system volume.
+Run the [source checks](README.md#development) and any integration checks relevant
+to the change. Tests that need original files are separate from the unit suite.
+With an imported game, check that the campaign saves load:
 
-Clean GitHub Windows CI passed on Python 3.11 and 3.14: 944 tests on each
-version (938 pass, six optional skips). It also passed source and checkpoint
-audits. Local verification loaded all 23 cleaned checkpoints and checked the
-frozen asset-free runtime, including a fresh original-file import. See status.md
-for the CI link and the recorded first-run graphical test failure/retry.
-Detailed local reports and previous checkpoint originals remain with the
-maintainer outside the repository; no raw research evidence is required for CI.
+```powershell
+python tools/check_checkpoints.py --content local/recovered
+```
 
-## Publishing and contact
+Before committing, review the staged changes and run:
 
-Repository: https://github.com/scienceandresearch/open-reunion.
+```powershell
+git diff --cached
+python tools/audit_repository.py --staged
+```
 
-The owner requested a PRIVATE GitHub repository. Do not change its visibility
-without explicit permission. Git commits use a GitHub noreply identity; do not
-replace it with a personal email. The rights-holder issue template and README
-invitation let people make initial contact via username when they have access.
-Do not post confidential rights documentation in an issue or discussion.
+The audit reads the Git index. It checks file types, asset exclusions, dependency
+hashes and checkpoint contents. Review release attachments separately.
 
-Read docs/CONTENT-POLICY.md before adding files or attaching a release. Source
-logic includes reconstructed presentation timing and is not clean-room code.
-No claim is made that excluding media resolves all IP questions. Keep original
-assets, converted bundles, screenshots, old tester ZIPs and private output out
-of both Git history and release attachments.
+## Saves and dependencies
+
+Checkpoint files and third-party source files have hashes recorded in their
+manifests. `.gitattributes` preserves their bytes across platforms. If you edit
+the checkpoint guide, update its entry in `tester-saves/MANIFEST.json`.
+
+`tools/prepare_public_checkpoints.py` creates a distributable collection from
+an original checkpoint collection by clearing message logs. It preserves all
+other gameplay fields. Keep save-format changes compatible with existing saves
+where possible, and document any migration.
+
+## Packaging
+
+Follow the [build guide](docs/SOURCE-QUICKSTART.md). The Windows builder uses
+`--content-bundle` for testing and leaves those assets out of the ZIP. It bundles
+the runtime, audio libraries and optional checkpoints. Use a new name for each
+build so earlier archives and reports remain available.
+
+`tools/check_tester_archive.py --original-source ...` checks a fresh extraction,
+imports a local original copy and tests the packaged game without Python on PATH.
+Its audio is muted for the test process. Other graphical test scripts can run
+through `tools/run_quiet.py` without changing system volume.
+
+Keep original files, converted assets and integration-test output out of Git
+and release attachments. See [content and rights](docs/CONTENT-POLICY.md).

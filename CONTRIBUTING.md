@@ -1,33 +1,37 @@
 # Contributing
 
-Start with README.md and the source quickstart. The repository contains a
-playable fan recreation; fixes should preserve campaign and save compatibility
-unless a deliberate change is documented. Keep changes small and explain the
-player-visible behavior, relevant validation and remaining limits.
+Bug reports, fixes and help with testing are welcome. Start with the
+[README](README.md) and [source guide](docs/SOURCE-QUICKSTART.md).
 
-Run the unit suite, checkpoint check and repository audit described in README.
-When changing a particular system, use meaningful synthetic regressions. Do not
-add original executable chunks, decrypted dialogue, graphics, music, fonts,
-converted data bundles, personal credentials or screenshots of original assets
-as fixtures. Use generated data or load user-supplied assets only in local tests.
+For a bug report, include the version, starting save, game date, steps to
+reproduce it, and what you expected to happen. Mention any admin commands used.
+The [feedback template](TESTER-FEEDBACK.md) has more detail.
 
-Generated files belong under local/, reports/, saves/, logs/ or dist/ and stay
-out of Git. The reviewed tester-saves collection is an intentional exception
-for modern campaign JSON, not permission to commit arbitrary original saves.
-See docs/CONTENT-POLICY.md. Preserve its gameplay state and update the manifest
-if changing its guide. Use tools/prepare_public_checkpoints.py when regenerating
-a public collection from private campaign checkpoints.
+## Code changes
 
-The setup importer must remain offline, read-only toward originals, save-free
-and transactional. Do not relax executable/version checks to accept an unknown
-release. The public package builder must never copy the original asset bundle.
+Keep changes focused and explain how they affect the player. Preserve existing
+campaigns and save compatibility where possible. Add regression coverage for
+bugs using generated test data.
 
-Use `python tools/run_quiet.py tools/<driver>.py ...` for local graphical/audio
-checks. It mutes the test process while leaving the audio engine active; do not
-change the user's global volume. Do not run lengthy campaigns for a doc-only
-change. Record current status and meaningful evidence in status.md/HANDOFF.md.
+Run the [unit suite and content checks](README.md#development). Before pushing,
+review `git diff --cached` and run `python tools/audit_repository.py --staged`.
+Use original files only for local integration tests; they aren't needed for CI.
+For graphical tests with audio, use `tools/run_quiet.py` to mute the test process.
 
-Before pushing, review `git diff --cached` and run
-`python tools/audit_repository.py --staged`. The audit is a technical guard, not
-a legal determination. Check release attachments separately. A new asset file
-or copied text requires rights review even if it passes an automated scan.
+## Files and assets
+
+Don't commit original executables, dialogue, graphics, music, converted bundles
+or screenshots of game assets. Use the ignored `local/`, `reports/`, `saves/`,
+`logs/` and `dist/` folders for generated files.
+
+The included `tester-saves` collection has had its message logs removed. Keep
+its manifest up to date when editing the guide or replacing a checkpoint.
+`tools/prepare_public_checkpoints.py` handles log removal when preparing a new
+collection. See [content and rights](docs/CONTENT-POLICY.md) before adding data
+or attaching files to a release.
+
+The importer must leave original files untouched, work offline and check the
+supported version before converting. Support for another release needs its
+own format checks; don't bypass validation to make it load.
+
+See the [maintainer guide](HANDOFF.md) for the code map and packaging workflow.

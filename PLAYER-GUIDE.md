@@ -4,11 +4,10 @@ This is the detailed control reference for the
 **Open Reunion 0.38.0a8 fan recreation**. The short entry guide is
 [QUICKSTART.md](QUICKSTART.md).
 
-After importing your original files, the game provides the intro and graphical routes described
-below. The automated graphical campaign has reached victory; independent
-player testing and visual comparisons remain part of final-release work.
+Import your original game files before playing. See the
+[setup instructions](README.md#getting-started) if this is your first launch.
 
-## Current source controls
+## Controls
 
 Landing discoveries now open their story automatically after the landing
 animation and sound finish. Satellite discoveries also open their story.
@@ -42,7 +41,7 @@ icon above the picture. Occupied slots show their game date; replacing one
 requires confirmation. To restore it, select the row and click **Load**.
 Successful slot saves/loads return to the control room. **Save file...** and
 **Load file...** below the picture let you use named JSON files, including
-the optional earned-Earth feedback saves.
+the optional campaign checkpoints.
 
 Original **Game Credits** is available through **Disk Operations** in the
 control-room icons. **Space** pauses/resumes; **Replay** restarts the film;
@@ -50,17 +49,19 @@ control-room icons. **Space** pauses/resumes; **Replay** restarts the film;
 
 ## Start
 
-1. Right-click the ZIP and choose **Extract All**. Keep the folder together.
-2. Double-click **OpenReunion.exe** inside the extracted folder.
+1. From source, double-click **Import-Assets.cmd**. In a built Windows package,
+   run **OpenReunion.exe**.
+2. On first launch, choose your original game folder, wait for import, then
+   click **Continue to game**.
 3. Click **NEW GAME**, choose the female hero on the left or male hero on the
    right, then click the portrait (or Enter). No previous save is required.
 4. You enter the control room with 120,000 credits at 2927/08/13/23.
    **Time starts paused.** Click **Run (Space)** below the game, or press
    **Space**, to begin.
 
-The ZIP includes its runtime and game content. No Python, DOSBox or separate
-original-game installation is needed. In the developer checkout, use
-**Launch-Original.cmd** instead; that launcher requires Python with Tk.
+Source checkouts require Python 3.11+ with Tk. Built Windows packages include
+the runtime, but both need assets imported from your original game. See the
+[build guide](docs/SOURCE-QUICKSTART.md) to create a Windows package.
 
 Escape goes back during hero selection; **Main menu** below the game
 opens these choices during play. **F10** also opens the menu during a
@@ -110,8 +111,7 @@ Leave/Escape returns to the room. Loading closes the consultation; click the
 commander again to resume a saved training quote without requesting another.
 The current source saves in format v23. Older v21/v22 saves can load here,
 retaining their previously displayed female hero; older saves do not gain
-missing historical report snapshots. The exact candidate package version and
-compatibility statement belong in its packaged build notes.
+missing historical report snapshots.
 
 Losing New Earth plays the original defeat film after battle
 results and pending notices. **Space** or **Play/Pause** controls playback;
@@ -352,21 +352,19 @@ Closing normally writes
 `saves/recovered-autosave.json`; it does not automatically resume that file.
 Automatic backups are reused, so keep named saves for progress you value.
 
-## Source and package boundary
+## Graphical and diagnostic interfaces
 
 The startup menu and hero selection, control room, commander hiring/advice,
 university, research, Info/Buy, map/planet/race views, colony surfaces, mining,
 fleets, equipment, cargo, cockpit, battles, story scenes, conversations, Bar,
 messages and ending films are connected through the original graphical client.
-The current source also exposes the Play intro route described above. Product
-models use original geometry with approximate native rotation and shading;
-remaining room/terrain animation, palette fidelity, adverse choices and
-long-session audit work remain open.
+Use **Play intro** from the startup menu to watch the opening film. Product
+models use original geometry; their rotation and shading may differ from the
+DOS version.
 
-This candidate carries the current content. `Launch-Recovered.cmd` opens a
-table-based development client for
-diagnostics; ordinary player actions in this guide use the original graphical
-client and do not require the workbench.
+`Launch-Recovered.cmd` opens a table-based interface for diagnostics.
+The controls in this guide use the graphical game; you do not need the
+diagnostic interface to play.
 
 ## Optional admin help
 
@@ -386,22 +384,18 @@ balance testing, and report any older DOS save imports separately.
 
 ## Send feedback
 
-Use **TESTER-FEEDBACK.md**. Describe the screen, what you clicked, what you
-expected, and the game date. Include a screenshot for visual problems, your
-`.json` save for gameplay issues, and `logs/launch.log` for crashes.
+Use [TESTER-FEEDBACK.md](TESTER-FEEDBACK.md). Describe the screen, what you
+clicked, what you expected, and the game date. Keep a named save from before
+the problem, and mention it in your report. For crashes in a Windows package,
+check `logs/launch.log`; from source, check terminal output.
 
-See **TEST-BUILD.md** for the verified scope. The port's MIT license covers its
-own code; the original game assets retain their original ownership. Keep this
-content-bearing testing package separate from a public source-only release.
-
-## Editing a new group name (a5 update)
+## Editing a new group name
 
 Click the displayed type (for example Army) to cycle through unlocked group
-types. Enter commits a typed name and Escape cancels its edit. In a5, clicking
-another control also commits a valid name, so you can edit the name and then
-click the type directly. An empty/invalid name keeps the editor open; correct
-it or press Escape. In a4, click the name field and press Enter first if the
-other controls appear unresponsive.
+types. Enter commits a typed name and Escape cancels its edit. Clicking another
+control also commits a valid name, so you can edit the name and then click the
+type directly. An empty or invalid name keeps the editor open; correct it or
+press Escape.
 
 ## Deploy a Spy ship
 
@@ -484,15 +478,16 @@ no new saved fields or campaign restart are needed. No external popup is used.
 
 ## Optional campaign save points
 
-The Windows package includes **Optional Saves**, separate from your own saves.
-Its START-HERE.md lists 23 descriptive filenames, dates, what is already done
-and the next step. Choose More Icons > Disk Operations > Load file..., browse
-to Optional Saves beside OpenReunion.exe, and load your selection. A battle or
+The 23 checkpoints are in **tester-saves** in the source repository and
+**Optional Saves** in a built Windows package. START-HERE.md lists their dates,
+what is already done and the next step. Choose More Icons > Disk Operations >
+Load file..., browse to that folder and load your selection. A battle or
 ending also has a Load control below the game. Save your continuation under a
 new name in your usual save folder.
 
-These are unchanged, unassisted checkpoints from a verified automated New Game
-route. They contain real resources, prior decisions and casualties. Some
+The checkpoints preserve the resources, decisions and casualties from a
+campaign played without resource assistance. Their old message logs have
+been cleared. Some
 battles are still to be fought; saves labeled Already Won or Battle Won are
 after combat. Number 22 starts at the final battle result: Continue, then
 Continue the liberation notice. Number 23 opens the victory film paused.

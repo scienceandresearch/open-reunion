@@ -1,18 +1,31 @@
 # Quickstart
 
-1. Supply a complete supported original English Reunion folder.
-2. In a Windows package, run **OpenReunion.exe**, choose that folder and wait
-   for import. From source, install Python 3.11+ with Tk and use
-   **Import-Assets.cmd**; see README for the audio libraries.
-3. Click **Continue to game**, then choose New Game and your character.
-4. **Space** runs/pauses campaign time. Use the visible speed controls as needed.
-5. **More Icons > Disk Operations** provides Save/Load and named JSON files.
-   Keep your saves under new names; do not overwrite the supplied checkpoints.
+## Install and start
 
-To try later stages, follow the [checkpoint catalog](tester-saves/START-HERE.md).
-The [player guide](PLAYER-GUIDE.md) covers fleet types, equipment, cargo,
-satellites, spies, battles, quantity shortcuts and the optional admin console.
-The game requires imported assets even when loading a checkpoint.
+If you have a built Windows package, extract the whole ZIP and run
+**OpenReunion.exe**. The package includes its runtime and audio libraries.
 
-Setup failures: [asset import guide](docs/ASSET-IMPORT.md).
-Development/setup automation: [agent prompt](docs/AGENT-SETUP-PROMPT.md).
+From a source checkout, install Python 3.11 or newer with Tcl/Tk and follow the
+[source guide](docs/SOURCE-QUICKSTART.md) to set up audio. Then double-click
+**Import-Assets.cmd**.
+
+1. Choose your complete original English Reunion folder and wait for import.
+2. Click **Continue to game**, then choose **New Game** and your character.
+3. Press **Space** to start time. Press it again to pause.
+
+On later launches, use the same launcher. It reuses your imported files.
+
+## Save and explore
+
+Open **More Icons > Disk Operations** to save or load. Use **Save file...** for
+a named save, and keep your own progress under a new filename.
+
+To jump ahead, use **Load file...** and browse to `tester-saves` in source
+checkouts, or **Optional Saves** in Windows packages. The folder's
+**START-HERE.md** explains all 23 starting points.
+They need the same imported assets as a new game.
+
+The [player guide](PLAYER-GUIDE.md) covers fleets, equipment, cargo, satellites,
+spies, battles and the F2 admin console. For setup problems, see the
+[import guide](docs/ASSET-IMPORT.md). You can also use the
+[agent setup prompt](docs/AGENT-SETUP-PROMPT.md).

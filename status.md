@@ -1,54 +1,33 @@
 # Project status
 
-Updated 2026-09-14. The working folder is now `opensource`. This tree is the
-curated GitHub repository; historical research, original-derived output and
-older private builds are preserved outside it.
+Updated September 14, 2026. Current version: **0.38.0a8 (beta)**.
 
-## Current state
+## Available now
 
-- Private repository: https://github.com/scienceandresearch/open-reunion.
-  Issues and Discussions are enabled. Visibility must stay private unless the
-  owner explicitly requests a change.
-- Playable beta, game version 0.38.0a8, with the original accepted unassisted
-  graphical New Game-to-victory route. Broader player feedback is still needed.
-- Offline first-run asset importer; the complete supported original English
-  installation is required. Original game files are not shipped in the repo.
-- 23 optional checkpoints included. Only their historical logs were cleared;
-  every other gameplay field matches the tested originals. Provenance and file
-  hashes are recorded in tester-saves/MANIFEST.json.
-- Public Windows builder always excludes original assets and includes the
-  reviewed checkpoints. Source ZIP builder uses the audited public tree.
-- GitHub Actions: source audit, checkpoint validation and synthetic tests on
-  Windows with Python 3.11 and 3.14. No original assets are used by CI.
-- Fan-project README, setup/build guides, agent setup prompt and rights-holder
-  invitation are included. Issues/Discussions provide username-based contact;
-  no maintainer email is published by this repository.
+- The campaign is playable from New Game through the ending.
+- The graphical interface covers colonies, research, fleets, exploration, diplomacy, battles and story scenes.
+- Setup imports assets from a supported original English installation.
+- There are 23 optional campaign saves, including late-game battles and the ending.
+- Source code and build tools are available here. No prebuilt Windows release has been published on GitHub yet.
 
-## Verification
+## Checks
 
-Clean Windows CI passed on Python 3.11 and 3.14: 944 tests per version,
-938 passed and six expected private-evidence skips. The passing verification
-run is https://github.com/scienceandresearch/open-reunion/actions/runs/34884688070.
-The first CI run exposed unresolved temporary paths in two synthetic fixtures;
-they now resolve paths just as the real content adapter does.
-All 23 sanitized checkpoints load against the accepted imported catalog.
-The importer previously reproduced 2,593 converted files byte for byte; the
-folder rename preserves that pipeline. Asset-free Windows r2 with checkpoints
-passes the frozen graphical self-test. Repository guard tests cover original
-media, private paths, disguised binary data, unapproved archives and staged
-blobs that differ from their working copies.
+[Windows CI](https://github.com/scienceandresearch/open-reunion/actions/runs/34884688070)
+passed on Python 3.11 and 3.14: 938 tests passed and six optional tests were
+skipped on each version. CI also checks repository contents and checkpoint hashes.
 
-A fresh Windows r2 extraction completed the actual original-file import without
-executing the original program or importing personal saves. Its first graphical
-check failed at the Space-key assertion; a separate run against the same fresh
-import passed every frozen check with process audio muted. This input-sensitive
-test failure is retained in the private verification record.
+Local checks loaded all 23 campaign saves and verified 2,593 converted asset
+files. A Windows package completed a fresh asset import and passed its graphical
+self-test, including time controls, save/load, battles and cinematic playback.
 
-The technical content audit covers file selection, known asset payloads,
-embedded-data review, checkpoint logs and the pinned licensed dependency ZIP.
-It is not legal clearance for reconstructed presentation code or branding;
-see docs/CONTENT-POLICY.md. The repository must remain private until the owner
-explicitly decides otherwise. No request to contact original rights holders
-has been made on the owner's behalf.
+## Follow-up work
 
-See HANDOFF.md for maintenance commands and README.md for setup.
+- Player reports on campaign branches, balance and long sessions.
+- Further comparison of model shading, palettes and animation with the original.
+- Investigate an intermittent Space-key assertion in the packaged graphical test.
+  The same build and import passed on retry; the cause is still unresolved.
+- Publish a Windows download with setup instructions and release notes.
+
+Report bugs through [Issues](https://github.com/scienceandresearch/open-reunion/issues).
+Include the game version, starting save and steps to reproduce the problem.
+The [maintainer guide](HANDOFF.md) covers checks and packaging.

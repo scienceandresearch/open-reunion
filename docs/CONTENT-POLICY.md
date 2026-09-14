@@ -36,15 +36,12 @@ for the distinction between copyright and trademarks and the rights involved.
 
 ## Technical checks
 
-tools/audit_repository.py checks the curated working tree or exact staged Git
+`tools/audit_repository.py` checks the working tree or exact staged Git
 blobs, rejects generated paths and media/binary extensions, checks the pinned
 third-party archive hash, and flags potential secrets and large embedded binary
-literals. tools/check_checkpoints.py verifies all checkpoint membership/hashes.
+literals. `tools/check_checkpoints.py` verifies checkpoint files and their hashes.
 The source packager reuses the public-file audit.
 
 These checks cannot determine copyright ownership, detect every disguised
 payload, or prove absence of all protected expression. Review changes and
-release attachments, including nested archives, before sharing. The repository
-was prepared with fresh Git history so private development artifacts were never
-committed. Do not import the old development directory or its historical ZIPs
-into this repository.
+release attachments, including nested archives, before sharing.

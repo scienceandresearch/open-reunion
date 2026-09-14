@@ -1,27 +1,31 @@
-# Tested scope
+# Testing
 
-Open Reunion is a playable beta fan recreation, not a claim of exact original
-parity. The accepted development campaign reached victory from a fresh New Game
-through an automated, unassisted graphical route. That route used real resource
-costs, casualties and Save/Load. Other branches and player behavior still need
-feedback.
+Open Reunion is currently a beta. Campaign progression, setup and controls have
+been tested, and player feedback is welcome through
+[Issues](https://github.com/scienceandresearch/open-reunion/issues).
 
-The current source suite uses synthetic fixtures; a few private-evidence checks
-skip in a clean checkout. The local importer reproduced all 2,593 files in the
-accepted converted bundle byte for byte. Setup cancellation/retry/responsiveness
-and a fresh Windows import without Python on PATH passed. Frozen graphical
-checks covered startup, time, save/load, interface routes and ending assets with
-audio muted per process.
+## Test coverage
 
-The GitHub preparation preserves gameplay and adds content-exclusion checks,
-clean source packaging and 23 checkpoints whose historical event logs have
-been cleared. Checkpoint gameplay fields match the original tested collection.
-See status.md for current verification and version details.
+The unit suite uses generated data to check game rules, file formats, saves
+and interface behavior. CI runs it on Windows with Python 3.11 and 3.14.
+Six optional tests need additional local test data and skip in a clean checkout.
 
-Original files are needed only for local integration, rendering/audio checks
-and actual play. Never attach their contents to CI artifacts or releases.
-The public Windows builder uses a local bundle for validation but excludes it
-from the output. It includes dependency notices and the reviewed checkpoint pack.
+Local integration tests cover asset conversion, import cancellation and retry,
+startup, time controls, save/load, graphical screens, battles and the ending.
+A campaign test has also reached victory from New Game without resource
+assistance. All 23 supplied checkpoints have been loaded against imported assets.
 
-Use TESTER-FEEDBACK.md or the repository issue template for reproducible bugs.
-State which checkpoint or New Game start you used and whether admin was enabled.
+The Windows package has been tested after a fresh extraction and import, without
+Python on PATH. Audio tests mute their own process while exercising playback.
+Current results and known issues are listed in [status.md](status.md).
+
+## Testing a change
+
+Run the relevant unit tests first. Changes to asset conversion, graphical
+screens or audio also need a local check with a supported original copy.
+Packaging changes should be checked with `tools/check_tester_archive.py`;
+see the [build guide](docs/SOURCE-QUICKSTART.md).
+
+For gameplay reports, include the starting checkpoint or New Game choice, game
+date, actions taken and any admin use. The [feedback form](TESTER-FEEDBACK.md)
+provides a template.
