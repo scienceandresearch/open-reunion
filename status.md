@@ -26,7 +26,11 @@ older private builds are preserved outside it.
 
 ## Verification
 
-943 source tests run: 937 passed and six expected private-evidence skips.
+Clean Windows CI passed on Python 3.11 and 3.14: 944 tests per version,
+938 passed and six expected private-evidence skips. The passing verification
+run is https://github.com/scienceandresearch/open-reunion/actions/runs/34884688070.
+The first CI run exposed unresolved temporary paths in two synthetic fixtures;
+they now resolve paths just as the real content adapter does.
 All 23 sanitized checkpoints load against the accepted imported catalog.
 The importer previously reproduced 2,593 converted files byte for byte; the
 folder rename preserves that pipeline. Asset-free Windows r2 with checkpoints

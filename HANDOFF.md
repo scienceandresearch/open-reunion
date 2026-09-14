@@ -33,8 +33,11 @@ Use fresh archive/report names. `check_tester_archive.py --original-source ...`
 verifies a real frozen import and graphical checks without Python on PATH.
 Actual audio tests must be muted per process, not by changing system volume.
 
-The initial GitHub source preparation ran 943 tests (937 pass, six optional
-skips), validated all 23 cleaned checkpoints and the frozen asset-free runtime.
+Clean GitHub Windows CI passed on Python 3.11 and 3.14: 944 tests on each
+version (938 pass, six optional skips). It also passed source and checkpoint
+audits. Local verification loaded all 23 cleaned checkpoints and checked the
+frozen asset-free runtime, including a fresh original-file import. See status.md
+for the CI link and the recorded first-run graphical test failure/retry.
 Detailed local reports and previous checkpoint originals remain with the
 maintainer outside the repository; no raw research evidence is required for CI.
 
