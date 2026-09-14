@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.zip binary
+# Preserve upstream hashes and unmodified source/license bytes.
+third_party/** -text
+# Checkpoint payload hashes are part of the collection manifest.
+tester-saves/*.json -text
+tester-saves/*.md -text

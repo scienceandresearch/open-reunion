@@ -1,0 +1,17 @@
+[
+  {
+    "file": "OPENSSL.txt",
+    "url": "https://raw.githubusercontent.com/openssl/openssl/openssl-3.0.18/LICENSE.txt",
+    "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+  },
+  {
+    "file": "TCL.txt",
+    "url": "https://raw.githubusercontent.com/tcltk/tcl/core-8-6-15/license.terms",
+    "sha256": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16"
+  },
+  {
+    "file": "ZLIB-NG.txt",
+    "url": "https://raw.githubusercontent.com/zlib-ng/zlib-ng/2.2.4/LICENSE.md",
+    "sha256": "6c9f0d975b41afaa34d22f55bb8986ce69e5cb7ad327cb2b28820cd425edf5ee"
+  }
+]

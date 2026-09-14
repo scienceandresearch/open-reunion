@@ -1,0 +1,25 @@
+{
+  "id": "prototype-v1",
+  "notice": "Prototype balance, not a recovered DOS ruleset. See docs/PARITY.md.",
+  "builders": 10,
+  "research_work_per_hour": 10,
+  "travel_hours": 6,
+  "cargo_capacity": 1000,
+  "mining_per_hour": 2,
+  "station_per_hour": 1,
+  "buildings": {
+    "windtrap": {"name": "Windtrap", "credits": 10000, "work": 60, "power": 40},
+    "mine": {"name": "Mine", "credits": 6000, "work": 60, "power": -5},
+    "derrick": {"name": "Derrick", "credits": 7000, "work": 60, "power": -5},
+    "housing": {"name": "Housing", "credits": 5000, "work": 60, "power": -2},
+    "hospital": {"name": "Hospital", "credits": 7000, "work": 80, "power": -5},
+    "farm": {"name": "Farm", "credits": 6000, "work": 60, "power": -3},
+    "command_centre": {"name": "Command Centre", "credits": 100000, "work": 1000, "power": 0}
+  },
+  "products": {
+    "miner_droid": {"name": "Miner droid", "credits": 200, "ores": {"energon": 2, "raenium": 2}, "work": 70, "research_work": 30, "requires": []},
+    "satellite": {"name": "Satellite", "credits": 300, "ores": {"energon": 3}, "work": 50, "research_work": 40, "requires": []},
+    "miner_station": {"name": "Miner station", "credits": 5000, "ores": {"energon": 20, "raenium": 20}, "work": 600, "research_work": 100, "requires": ["satellite"]},
+    "trade_ship": {"name": "Trade ship", "credits": 3000, "ores": {"energon": 10, "raenium": 10}, "work": 300, "research_work": 80, "requires": ["satellite"]}
+  }
+}

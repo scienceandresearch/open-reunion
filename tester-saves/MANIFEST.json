@@ -1,0 +1,661 @@
+{
+  "pack": "Open-Reunion-Campaign-Checkpoints-r2",
+  "tested_version": "0.38.0a8",
+  "unassisted": true,
+  "save_bytes_modified": true,
+  "save_modification": "Only each checkpoint's top-level event log was cleared for public distribution; all other saved gameplay fields and the unassisted status are unchanged.",
+  "ancestry_segments": 38,
+  "saves": [
+    {
+      "title": "New Game - Starting Colony",
+      "directory": "reports/walkthrough-v23-home-economy-r1",
+      "checkpoint": "start",
+      "expect": "Untouched campaign start at New Earth.",
+      "next": "Build your economy and hire commanders, or use New Game for your own fresh campaign.",
+      "file": "01 - New Game - Starting Colony.json",
+      "source": "reports/walkthrough-v23-home-economy-r1/start.json",
+      "sha256": "f596ae368bc5c41475ee37907186d4d441cdf673d3376a1e7fabf840e712768b",
+      "bytes": 160887,
+      "state_sha256": "ae282937efde38c795a61731f37200bc501e23a4404f8446f23e6546e6215d46",
+      "date": [
+        2927,
+        8,
+        13,
+        23
+      ],
+      "space_phase": null,
+      "ground_phase": null,
+      "campaign_phase": "starmap",
+      "original_sha256": "508f44821a4b410102e494bd073153319156e2515ec047b0898aaa4678c63ce7",
+      "original_state_sha256": "de6c2ae657fe695fc39ea96882d480d3adcaf374455c9bc18bd8ca81003efc7c"
+    },
+    {
+      "title": "New Earth - Economy Established",
+      "directory": "reports/walkthrough-v23-home-economy-r1",
+      "checkpoint": "walkthrough-home-economy",
+      "expect": "Home industry, services and additional housing are built.",
+      "next": "Research and deploy survey satellites, then expand to other colonies.",
+      "file": "02 - New Earth - Economy Established.json",
+      "source": "reports/walkthrough-v23-home-economy-r1/walkthrough-home-economy.json",
+      "sha256": "d2e27fe6a681e34ee6e4f172126b8289389a37ed3f318e4a37c28860e45baecb",
+      "bytes": 162912,
+      "state_sha256": "28abdf34f2d8b5c6ca73c57451fb6554ce62ae3bb9e2be2ba4e03a65df6d8b81",
+      "date": [
+        2927,
+        9,
+        9,
+        10
+      ],
+      "space_phase": null,
+      "ground_phase": null,
+      "campaign_phase": "starmap",
+      "original_sha256": "c575cf0438f61e5c966e56a6110018d9a65461725020d689f0330d03493d139a",
+      "original_state_sha256": "1ee62a956e10fb9c16c8f01f71cb85dd3f2bb8287c6bed64381f6e38cfa93f44"
+    },
+    {
+      "title": "Apollo - Colony Established",
+      "directory": "reports/walkthrough-v23-apollo-colony-r1",
+      "checkpoint": "walkthrough-apollo-colony",
+      "expect": "Apollo has been settled.",
+      "next": "Develop its power, industry, housing and colony services.",
+      "file": "03 - Apollo - Colony Established.json",
+      "source": "reports/walkthrough-v23-apollo-colony-r1/walkthrough-apollo-colony.json",
+      "sha256": "45e0c28b599f188c62138de653206acebed7c844f7997e7bdd698695f99efa40",
+      "bytes": 169867,
+      "state_sha256": "10b169b70d2ea0e95f2340fa643b585f324fad8619800a1d2ff7a382cbc7940a",
+      "date": [
+        2927,
+        10,
+        25,
+        8
+      ],
+      "space_phase": null,
+      "ground_phase": null,
+      "campaign_phase": "starmap",
+      "original_sha256": "8022a726e869b519046c767e313774cba39eda6b958db92b2915b5538844e927",
+      "original_state_sha256": "b0c5191b7020b773586ba0488fde40ad3bffac3ad1ba6c790c8cbeda147237cb"
+    },
+    {
+      "title": "Four Colonies - Ready for First Contact",
+      "directory": "reports/walkthrough-v23-pre-contact-ready-r1",
+      "checkpoint": "walkthrough-ready-for-first-contact",
+      "expect": "New Earth, Apollo, Mir and Penelope are established; Jade contact has not happened.",
+      "next": "Send the Trade group to Jade (1:7:0) to make first contact.",
+      "file": "04 - Four Colonies - Ready for First Contact.json",
+      "source": "reports/walkthrough-v23-pre-contact-ready-r1/walkthrough-ready-for-first-contact.json",
+      "sha256": "dd038fdc5bd7001e515b3dea69550c67db9451f83b8cba5f1d0dfdc507db45df",
+      "bytes": 188274,
+      "state_sha256": "ef33d4f99bd07aad9be72f35147e6a505de0709e511cc9117ed521941d213d5a",
+      "date": [
+        2928,
+        4,
+        24,
+        0
+      ],
+      "space_phase": null,
+      "ground_phase": null,
+      "campaign_phase": "starmap",
+      "original_sha256": "ecd140ea2559c7b998727bf7a3a2fa10a77a433e92572cc23c408275c01488e9",
+      "original_state_sha256": "c2059972cbeb30ec7e9341af16d68fe6cb217d62882ca3604f980e8449d3b5f9"
+    },
+    {
+      "title": "Jade Contact - Communicator Researched",
+      "directory": "reports/walkthrough-v23-first-contact-r1",
+      "checkpoint": "walkthrough-communicator-and-home-return",
+      "expect": "Jaanosian contact and Communicator research are complete; the Trade group is home.",
+      "next": "Build up remote mining and ore transport.",
+      "file": "05 - Jade Contact - Communicator Researched.json",
+      "source": "reports/walkthrough-v23-first-contact-r1/walkthrough-communicator-and-home-return.json",
+      "sha256": "40d32a3143751e8266dda5e6881a9600f7842754c18d743e6c82cfd05e794ff0",
+      "bytes": 188810,
+      "state_sha256": "7ac5906d4079199bb17d10cabb60b68dc1ad9e4502add0f3e80999520f40e1da",
+      "date": [
+        2928,
+        4,
+        26,
+        8
+      ],
+      "space_phase": null,
+      "ground_phase": null,
+      "campaign_phase": "starmap",
+      "original_sha256": "1fdcb0eabd80224feaabdc9abd308e8f20b25134e6921886ce6d13b095aa3e0f",
+      "original_state_sha256": "212fa9bc3b4b5cf1061ae9c3a865d72065c06b89d0be222343e28f40bc56d9f6"
+    },
+    {
+      "title": "Home Defense - Hunter Fleet Prepared",
+      "directory": "reports/walkthrough-v23-first-defense-r1",
+      "checkpoint": "walkthrough-twenty-armed-hunters",
+      "expect": "Twenty armed Hunters are prepared; this is before the first Morgrul defense, not an active battle.",
+      "next": "Maintain your colonies and advance time until the incoming attack arrives.",
+      "file": "06 - Home Defense - Hunter Fleet Prepared.json",
+      "source": "reports/walkthrough-v23-first-defense-r1/walkthrough-twenty-armed-hunters.json",
+      "sha256": "676f299293d2b57e2a4864e1c0d36a977e028af7a732b73b82a1fa98a0d23bf0",
+      "bytes": 206604,
+      "state_sha256": "ca787d60abc3532ff7fc7391fd8232656c57e13e201a9c71fb9b275d970d0fd1",
+      "date": [
+        2928,
+        8,
+        30,
+        20
+      ],
+      "space_phase": null,
+      "ground_phase": null,
+      "campaign_phase": "starmap",
+      "original_sha256": "624e251e4321b2b07b2ee310946e014b158f044ada5ffdc0a4e9731c3674b5de",
+      "original_state_sha256": "19348eb201011880a7a87f3c20a827fb346fadfd458fd1f01281d9aae364eaaf"
+    },
+    {
+      "title": "First Morgrul Defense - Already Won",
+      "directory": "reports/walkthrough-v23-first-defense-r1",
+      "checkpoint": "walkthrough-first-morgrul-defense",
+      "expect": "The first invasion has been defeated and acknowledged.",
+      "next": "Replace losses, recover the Radio at Jade and develop Russel.",
+      "file": "07 - First Morgrul Defense - Already Won.json",
+      "source": "reports/walkthrough-v23-first-defense-r1/walkthrough-first-morgrul-defense.json",
+      "sha256": "4da6a8e4833335725bbe5e568dc302eaccff3ea56a8e1c8efd0d657feb7653e9",
+      "bytes": 219873,
+      "state_sha256": "846aa0603a9478833d056755d9bc8a63b6966cc70b6574f6e608dfb0800ecff1",
+      "date": [
+        2928,
+        9,
+        20,
+        6
+      ],
+      "space_phase": "closed",
+      "ground_phase": null,
+      "campaign_phase": "starmap",
+      "original_sha256": "1ec02813087ba22393980f252baa18c7e9ba9b60ec652ca1b48618608b1ce8fb",
+      "original_state_sha256": "989c68c495175580ebc5f0230ae6f04e7dfebc018217b453592d141e12290f57"
+    },
+    {
+      "title": "Phelonian Trade - Tank Technology Earned",
+      "directory": "reports/walkthrough-v23-tank-bargain-r1",
+      "checkpoint": "walkthrough-tank-bargain-home-return",
+      "expect": "The Tank technology bargain is complete and the Trade group has returned home.",
+      "next": "Manufacture and equip Tanks while preparing for later Morgrul attacks.",
+      "file": "08 - Phelonian Trade - Tank Technology Earned.json",
+      "source": "reports/walkthrough-v23-tank-bargain-r1/walkthrough-tank-bargain-home-return.json",
+      "sha256": "569dcc8158d24e6fe64b073c2a4601a155afcb1bc9259569cf5f7075cf809de4",
+      "bytes": 225000,
+      "state_sha256": "f96b6d95b3e4106279961058371dc3950f0130060608151894b324dfcfe80e0a",
+      "date": [
+        2928,
+        10,
+        27,
+        13
+      ],
+      "space_phase": "closed",
+      "ground_phase": null,
+      "campaign_phase": "starmap",
+      "original_sha256": "ba2afe5128b151e39003b6a8d1beb88c0034e3e2163ea828122cd7f224668a0b",
+      "original_state_sha256": "df93838a7baba61c27c673d858fc2d9ac4de50443898d04aefa28974ffb40eb5"
+    },
+    {
+      "title": "Third Morgrul Defense - Already Won",
+      "directory": "reports/walkthrough-v23-third-defense-r1",
+      "checkpoint": "walkthrough-third-morgrul-defense",
+      "expect": "The third invasion is defeated; later contact and technology progression is available.",
+      "next": "Follow the prisoner/informant leads toward Mirach and its wreck.",
+      "file": "09 - Third Morgrul Defense - Already Won.json",
+      "source": "reports/walkthrough-v23-third-defense-r1/walkthrough-third-morgrul-defense.json",
+      "sha256": "b66e9165e5ddaa78ff986e5dad4aeb73f5b103a09518956afbe055b6dc2abda2",
+      "bytes": 247666,
+      "state_sha256": "4504d9b090c8852106fb75c6a05d7643b0d2cd5b1964491ec2ada2e0a1f409f6",
+      "date": [
+        2929,
+        1,
+        5,
+        19
+      ],
+      "space_phase": "closed",
+      "ground_phase": null,
+      "campaign_phase": "starmap",
+      "original_sha256": "c6c94f9f204defac7b42359e9c3b861ef9fd12f9db9accf625227162557b77b4",
+      "original_state_sha256": "9e1cd85029b6e37a98e91e79d6c38ce4fad6692f7b8364ba846abeb84c1208d0"
+    },
+    {
+      "title": "Mirach Wreck - Technology Recovered",
+      "directory": "reports/walkthrough-v23-mirach-wreck-r3",
+      "checkpoint": "walkthrough-mirach-wreck-technology",
+      "expect": "The wreck landing has revealed Missile and Destroyer technology.",
+      "next": "Return the expedition home, research the discoveries and prepare an assault force.",
+      "file": "10 - Mirach Wreck - Technology Recovered.json",
+      "source": "reports/walkthrough-v23-mirach-wreck-r3/walkthrough-mirach-wreck-technology.json",
+      "sha256": "8ea5c23a02e865bdf11b17712e877558fd8a165b3b15574ef6fc137d205b269a",
+      "bytes": 248264,
+      "state_sha256": "c0be329c571274e54c61eaebec9fb2b6eae314d9e9d078843b40af627539e48e",
+      "date": [
+        2929,
+        1,
+        8,
+        11
+      ],
+      "space_phase": "closed",
+      "ground_phase": null,
+      "campaign_phase": "starmap",
+      "original_sha256": "41861b65c04d0f2637b1a832a56fc486ac9ad46c2c977a15a6fde67c54cfc4b8",
+      "original_state_sha256": "1a241345e609b6cde9207936da16a4253be16aa3532261358cee075289dceba6"
+    },
+    {
+      "title": "Morgrul Capital - Ground Deployment",
+      "directory": "reports/walkthrough-v23-morgrul-assault-r1",
+      "checkpoint": "walkthrough-morgrul-ground-setup-with-kall-aid",
+      "expect": "The space battle is won; player troops and Kall assistance are at ground deployment.",
+      "next": "Arrange ground groups, choose OK, ATTACK, then use Space to run or pause the battle.",
+      "file": "11 - Morgrul Capital - Ground Deployment.json",
+      "source": "reports/walkthrough-v23-morgrul-assault-r1/walkthrough-morgrul-ground-setup-with-kall-aid.json",
+      "sha256": "6c1ab53b675910b3a3774cc9cf7500734d6a768ce563b0e1517d5b2f9787992a",
+      "bytes": 276017,
+      "state_sha256": "54c083455f43afdd3cb2d299d6420fc4333ed74dd5f2f2e023b70809e2c70f6f",
+      "date": [
+        2929,
+        3,
+        23,
+        8
+      ],
+      "space_phase": "closed",
+      "ground_phase": "setup",
+      "campaign_phase": "starmap",
+      "original_sha256": "7ae1949eda3c1d17df5a5175dc2051d96d32b033b9479f3b0390a8e9d69f3c1b",
+      "original_state_sha256": "52579bb8055999fda89bd6f1f45c3a996eea15c0190a7383017320b981b54a00"
+    },
+    {
+      "title": "Morgruls Defeated - Later Systems Open",
+      "directory": "reports/walkthrough-v23-morgrul-victory-r1",
+      "checkpoint": "walkthrough-morgrul-defeated-and-later-systems-unlocked",
+      "expect": "The Morgrul campaign is complete and later systems are unlocked.",
+      "next": "Replace losses and prepare an Antares expedition.",
+      "file": "12 - Morgruls Defeated - Later Systems Open.json",
+      "source": "reports/walkthrough-v23-morgrul-victory-r1/walkthrough-morgrul-defeated-and-later-systems-unlocked.json",
+      "sha256": "567126c2c34ba9f36c1a51cd79e3fe92e277c538bb939b73f1a7a5b39d7b8bfd",
+      "bytes": 281706,
+      "state_sha256": "924b071314d87e701599b76e47d6969db2c8cdc20698158c182f1046043a42ff",
+      "date": [
+        2929,
+        3,
+        23,
+        9
+      ],
+      "space_phase": "closed",
+      "ground_phase": "closed",
+      "campaign_phase": "starmap",
+      "original_sha256": "f7a4d7497e8ea694897f5068b1c804cf5f3935af057b25cad99f05d9f6143649",
+      "original_state_sha256": "767bfe35e06490cb0f28f39d67b5ff8e54c45789169cdf136ffdf2dbe8c7da41"
+    },
+    {
+      "title": "Antares - Nova Warning",
+      "directory": "reports/walkthrough-v23-antares-rescue-r2",
+      "checkpoint": "walkthrough-antares-nova-warning",
+      "expect": "The Observatory has detected the impending nova. This is a time-sensitive campaign checkpoint.",
+      "next": "Take the Trade group to the Erans at 4:2:0, complete contact, then bring your fleets out of Antares.",
+      "file": "13 - Antares - Nova Warning.json",
+      "source": "reports/walkthrough-v23-antares-rescue-r2/walkthrough-antares-nova-warning.json",
+      "sha256": "d458f8d7d07ea77a85747a2337023739b90728adfac98954f427d799ea177a7a",
+      "bytes": 284219,
+      "state_sha256": "252d7e862ce2d7801eb995c80725d5cf92c980b87fa183190e1463c2f2b516e9",
+      "date": [
+        2929,
+        4,
+        7,
+        21
+      ],
+      "space_phase": "closed",
+      "ground_phase": "closed",
+      "campaign_phase": "starmap",
+      "original_sha256": "0918e00bd394535acae9e5c3cc0b509a5eb3209d65722647234d7c26a37d5fbc",
+      "original_state_sha256": "449e543380ccff5ed3bffe417d2629d0f55b63ac91130079e4a53854c205febd"
+    },
+    {
+      "title": "League Diplomacy - Alliance and Aircraft Idea",
+      "directory": "reports/walkthrough-v23-league-alliance-r1",
+      "checkpoint": "walkthrough-undorling-alliance-and-aircraft-idea",
+      "expect": "The Undorling alliance has been earned and the Aircraft idea is available.",
+      "next": "Research and equip Aircraft, defend your colonies and survey the League capitals.",
+      "file": "14 - League Diplomacy - Alliance and Aircraft Idea.json",
+      "source": "reports/walkthrough-v23-league-alliance-r1/walkthrough-undorling-alliance-and-aircraft-idea.json",
+      "sha256": "1bfbdb10110a17c2afeee26be18c9522611aba5a97bccb5cebe72934f383731f",
+      "bytes": 282666,
+      "state_sha256": "cfc42e7e188056783140bb50442834eb53544d2ffec53fd698d93bfe00319d46",
+      "date": [
+        2929,
+        8,
+        4,
+        23
+      ],
+      "space_phase": "closed",
+      "ground_phase": "closed",
+      "campaign_phase": "starmap",
+      "original_sha256": "9ef808d9fcd7999ad5bd0aaa1494ea9acaa621e40b90a8cc06227cf4d50e6fea",
+      "original_state_sha256": "ebf3d9eb46e86df793c7aa54851e2f5be1dff2560d751b06ff3b329f54725226"
+    },
+    {
+      "title": "Hirachi Capital - Ground Deployment",
+      "directory": "reports/walkthrough-v23-hirachi-assault-r1",
+      "checkpoint": "walkthrough-hirachi-ground-setup",
+      "expect": "The Hirachi space battle is won; ground forces await deployment.",
+      "next": "Arrange forces and select OK, ATTACK. Space runs or pauses combat.",
+      "file": "15 - Hirachi Capital - Ground Deployment.json",
+      "source": "reports/walkthrough-v23-hirachi-assault-r1/walkthrough-hirachi-ground-setup.json",
+      "sha256": "7fb7ec3164032b50827b057ac9c4516dbaecbc2143258fcf73ac438e8a1acca3",
+      "bytes": 292160,
+      "state_sha256": "47891eb1cb54166b5ec7ff9c356c714abbeb5aa86be887f391ace6867c2b7fd1",
+      "date": [
+        2929,
+        10,
+        10,
+        23
+      ],
+      "space_phase": "closed",
+      "ground_phase": "setup",
+      "campaign_phase": "starmap",
+      "original_sha256": "78d88e29b48e3b8e83a1c53fdce1427f232538e3a91b9c81baf3e3d48d593776",
+      "original_state_sha256": "729c4359f3bb5bbf70effd700f941cd704588d755fd1190ff51ba1164d291d91"
+    },
+    {
+      "title": "Druedian Capital - Ground Deployment",
+      "directory": "reports/walkthrough-v23-druedian-assault-r1",
+      "checkpoint": "walkthrough-druedian-ground-setup",
+      "expect": "The Druedian space battle is won; ground forces await deployment.",
+      "next": "Arrange forces and select OK, ATTACK. Space runs or pauses combat.",
+      "file": "16 - Druedian Capital - Ground Deployment.json",
+      "source": "reports/walkthrough-v23-druedian-assault-r1/walkthrough-druedian-ground-setup.json",
+      "sha256": "b3e302a65021463550e4334a63dc5d0f4f9c3cebd4804bab5e301a012e8133a9",
+      "bytes": 287200,
+      "state_sha256": "7c2962db5907a497d7677873709d1dce5207bb72aea5d6a30d9dba78ee95f839",
+      "date": [
+        2929,
+        10,
+        11,
+        7
+      ],
+      "space_phase": "closed",
+      "ground_phase": "setup",
+      "campaign_phase": "starmap",
+      "original_sha256": "ad68f49e0df44c9eaf2c2760adb61cf49b54e7ca9137269c01835255357d66a4",
+      "original_state_sha256": "5ede0c36f654a9ee12b103a5f9aee60c9be65d4a1e0a1ed2afbd9c9d5fca03b8"
+    },
+    {
+      "title": "Lisonian Capital - Formation Ready",
+      "directory": "reports/walkthrough-v23-lisonian-organized-r1",
+      "checkpoint": "walkthrough-lisonian-twenty-ground-groups",
+      "expect": "The ground formation is already organized into twenty groups; combat has not started.",
+      "next": "Choose OK, ATTACK, select friendly groups and issue attack orders. Victory is not automatic.",
+      "file": "17 - Lisonian Capital - Formation Ready.json",
+      "source": "reports/walkthrough-v23-lisonian-organized-r1/walkthrough-lisonian-twenty-ground-groups.json",
+      "sha256": "e5980e64eff75ac133e12018615e09511cc42179d785b213ec1f89524fab1b7f",
+      "bytes": 301569,
+      "state_sha256": "3e0be9721e1d36c26bf85a5f38b50a30911290addfef901b7934027f876a4765",
+      "date": [
+        2929,
+        10,
+        11,
+        15
+      ],
+      "space_phase": "closed",
+      "ground_phase": "setup",
+      "campaign_phase": "starmap",
+      "original_sha256": "f41cedd88b0774f2ef1d936a27f247a3cc40beab430facb3e47c7ba1978a573d",
+      "original_state_sha256": "b37b339ee6ca59fbbe70a1af3f60bb6777f60f0d01af4e9100712b2d177fc96b"
+    },
+    {
+      "title": "Rigel Expedition - Earth Coordinates Known",
+      "directory": "reports/walkthrough-v23-rigel-contact-r1",
+      "checkpoint": "walkthrough-rigel-expedition-returned",
+      "expect": "Syonian contact, advanced research and Earth coordinates are complete; the expedition is home.",
+      "next": "Build and equip the final Earth fleet and establish the home Energy shield.",
+      "file": "18 - Rigel Expedition - Earth Coordinates Known.json",
+      "source": "reports/walkthrough-v23-rigel-contact-r1/walkthrough-rigel-expedition-returned.json",
+      "sha256": "9557761ac34ca781afb1bac6322881a018078d771289e1f745baaf531c70c2f0",
+      "bytes": 307763,
+      "state_sha256": "e1fb4586f93d7bbf59f86463a1af9d6018aae570aaf6ead1ef88aec2fbd9e4d9",
+      "date": [
+        2929,
+        11,
+        4,
+        10
+      ],
+      "space_phase": "closed",
+      "ground_phase": "closed",
+      "campaign_phase": "starmap",
+      "original_sha256": "a45556d7a60a46af8955dbd1a795b7f5b2ac1c860442dba9f48a13cbd576bb9d",
+      "original_state_sha256": "72b8a5bf780e78c36758c276833f15a5bb4e49316b0a726181a724ac2e9511a0"
+    },
+    {
+      "title": "Final Fleet - Equipped and Home Shield Ready",
+      "directory": "reports/walkthrough-v23-earth-force-r2",
+      "checkpoint": "walkthrough-home-energy-shield",
+      "expect": "The final fleet is equipped and New Earth has a powered Energy shield.",
+      "next": "Travel to Earth, establish contact and carry out reconnaissance and resistance preparations.",
+      "file": "19 - Final Fleet - Equipped and Home Shield Ready.json",
+      "source": "reports/walkthrough-v23-earth-force-r2/walkthrough-home-energy-shield.json",
+      "sha256": "ce68268f6c00dd110bda117cd2e02d80566194fde77182d7f61a825901647cbb",
+      "bytes": 308057,
+      "state_sha256": "00fdf4260336b9631371abad097eda86a035d4d64e341961b8ef24207e332304",
+      "date": [
+        2930,
+        9,
+        10,
+        17
+      ],
+      "space_phase": "closed",
+      "ground_phase": "closed",
+      "campaign_phase": "starmap",
+      "original_sha256": "364c0e11df3f433ad9e2009e56c59586b585a9231bfe64e61707a6bf3b1304bb",
+      "original_state_sha256": "0e2026a16d3b0e68e29f1b9a1bd21e096515056cfeffdc75a255090937e1773f"
+    },
+    {
+      "title": "Earth - Surveyed Before Final Assault",
+      "directory": "reports/walkthrough-v23-earth-contact-r1",
+      "checkpoint": "walkthrough-earth-survey-ready",
+      "expect": "Earth reconnaissance and sabotage preparations are complete; the fleet is at Earth.",
+      "next": "Select the Army in Earth orbit and choose Assault.",
+      "file": "20 - Earth - Surveyed Before Final Assault.json",
+      "source": "reports/walkthrough-v23-earth-contact-r1/walkthrough-earth-survey-ready.json",
+      "sha256": "9c7d19359229fb535a525a0b36639a6704675cf89bf80a45aab92684e4bfc9b7",
+      "bytes": 308301,
+      "state_sha256": "8a06b00b9d32b12df783f9d4169ee56bdce116771e6f7382ffb70c484cbe93ce",
+      "date": [
+        2930,
+        9,
+        23,
+        0
+      ],
+      "space_phase": "closed",
+      "ground_phase": "closed",
+      "campaign_phase": "starmap",
+      "original_sha256": "3daedd9099b6cf7642374fd23fd1f72179cb7e3dc2d69791cc986f72a4906d8c",
+      "original_state_sha256": "e32f0d1e7cd6707331310283dbde03ce8b45af57fbcf5c9614295881078d1d2f"
+    },
+    {
+      "title": "Earth - Final Ground Deployment",
+      "directory": "reports/walkthrough-v23-earth-assault-r1",
+      "checkpoint": "walkthrough-earth-ground-setup",
+      "expect": "The final space battle is won. Ground forces are ready to deploy.",
+      "next": "Arrange the army, choose OK, ATTACK and command the final ground battle.",
+      "file": "21 - Earth - Final Ground Deployment.json",
+      "source": "reports/walkthrough-v23-earth-assault-r1/walkthrough-earth-ground-setup.json",
+      "sha256": "9bd8ba1e9fe380b20c2ca33570d2406559999387e66345837b260a2ee5044479",
+      "bytes": 339255,
+      "state_sha256": "0aba7529925155bf9defd1ca0ab5e02aaf82aa7d226e7cc1d55b55ff6e4a5be6",
+      "date": [
+        2930,
+        9,
+        23,
+        0
+      ],
+      "space_phase": "closed",
+      "ground_phase": "setup",
+      "campaign_phase": "starmap",
+      "original_sha256": "ee5811a55a47aec3c16675b48a71732262ef5a907c9735b937ecb50dc89e8da8",
+      "original_state_sha256": "6a363e2a9d7f0f07d507cb58ea9b7434cd5a5f5f000cf70c054a57db3cfe366f"
+    },
+    {
+      "title": "Earth - Battle Won Before Victory Film",
+      "directory": "reports/walkthrough-v23-earth-victory-r1",
+      "checkpoint": "walkthrough-earth-ground-result",
+      "expect": "The final ground battle is already won; no further fighting is needed.",
+      "next": "Click Continue, then Continue on the liberation notice to start the victory film.",
+      "file": "22 - Earth - Battle Won Before Victory Film.json",
+      "source": "reports/walkthrough-v23-earth-victory-r1/walkthrough-earth-ground-result.json",
+      "sha256": "6ac73c46f4dcbeac5576567f6cc6c62f05352638afd26a1c59c000bf69c1fb8a",
+      "bytes": 342938,
+      "state_sha256": "4b87560986b4dc9a340f7b30c2d600e94910cab4c0270be0e99f584a52e11ef0",
+      "date": [
+        2930,
+        9,
+        23,
+        0
+      ],
+      "space_phase": "closed",
+      "ground_phase": "result",
+      "campaign_phase": "starmap",
+      "original_sha256": "4169d17d091af1e0f992bcb21006c88322417e9d148fd50550b21d3eedbb25e4",
+      "original_state_sha256": "08cbd5474011349868326343aae4b2f9418b1b77f5dce86e2fbed5a4902d4b72"
+    },
+    {
+      "title": "Victory - Watch the Ending",
+      "directory": "reports/walkthrough-v23-earth-victory-r1",
+      "checkpoint": "walkthrough-earned-earth-victory",
+      "expect": "The campaign has been won; the victory film opens paused.",
+      "next": "Press Play or Space to watch the ending.",
+      "file": "23 - Victory - Watch the Ending.json",
+      "source": "reports/walkthrough-v23-earth-victory-r1/walkthrough-earned-earth-victory.json",
+      "sha256": "98920829dd869d852c9898a241270b1e5b22eeb4020335e512a1ba1a5ceb6b0f",
+      "bytes": 344826,
+      "state_sha256": "40f7dbcd04f0f835ec66c4a55698ed3f894537138c1a55d5855f2613ea72606f",
+      "date": [
+        2930,
+        9,
+        23,
+        0
+      ],
+      "space_phase": "closed",
+      "ground_phase": "closed",
+      "campaign_phase": "victory",
+      "original_sha256": "1e64fc9d987edd3dcc2211bd498bc0ccbc862e3f950396f3b2e16c54a411da85",
+      "original_state_sha256": "db1c66a42f814c0d819acb0b9f0d27c645f568abef6fc423607a3f839408387f"
+    }
+  ],
+  "files": [
+    {
+      "path": "01 - New Game - Starting Colony.json",
+      "bytes": 160887,
+      "sha256": "f596ae368bc5c41475ee37907186d4d441cdf673d3376a1e7fabf840e712768b"
+    },
+    {
+      "path": "02 - New Earth - Economy Established.json",
+      "bytes": 162912,
+      "sha256": "d2e27fe6a681e34ee6e4f172126b8289389a37ed3f318e4a37c28860e45baecb"
+    },
+    {
+      "path": "03 - Apollo - Colony Established.json",
+      "bytes": 169867,
+      "sha256": "45e0c28b599f188c62138de653206acebed7c844f7997e7bdd698695f99efa40"
+    },
+    {
+      "path": "04 - Four Colonies - Ready for First Contact.json",
+      "bytes": 188274,
+      "sha256": "dd038fdc5bd7001e515b3dea69550c67db9451f83b8cba5f1d0dfdc507db45df"
+    },
+    {
+      "path": "05 - Jade Contact - Communicator Researched.json",
+      "bytes": 188810,
+      "sha256": "40d32a3143751e8266dda5e6881a9600f7842754c18d743e6c82cfd05e794ff0"
+    },
+    {
+      "path": "06 - Home Defense - Hunter Fleet Prepared.json",
+      "bytes": 206604,
+      "sha256": "676f299293d2b57e2a4864e1c0d36a977e028af7a732b73b82a1fa98a0d23bf0"
+    },
+    {
+      "path": "07 - First Morgrul Defense - Already Won.json",
+      "bytes": 219873,
+      "sha256": "4da6a8e4833335725bbe5e568dc302eaccff3ea56a8e1c8efd0d657feb7653e9"
+    },
+    {
+      "path": "08 - Phelonian Trade - Tank Technology Earned.json",
+      "bytes": 225000,
+      "sha256": "569dcc8158d24e6fe64b073c2a4601a155afcb1bc9259569cf5f7075cf809de4"
+    },
+    {
+      "path": "09 - Third Morgrul Defense - Already Won.json",
+      "bytes": 247666,
+      "sha256": "b66e9165e5ddaa78ff986e5dad4aeb73f5b103a09518956afbe055b6dc2abda2"
+    },
+    {
+      "path": "10 - Mirach Wreck - Technology Recovered.json",
+      "bytes": 248264,
+      "sha256": "8ea5c23a02e865bdf11b17712e877558fd8a165b3b15574ef6fc137d205b269a"
+    },
+    {
+      "path": "11 - Morgrul Capital - Ground Deployment.json",
+      "bytes": 276017,
+      "sha256": "6c1ab53b675910b3a3774cc9cf7500734d6a768ce563b0e1517d5b2f9787992a"
+    },
+    {
+      "path": "12 - Morgruls Defeated - Later Systems Open.json",
+      "bytes": 281706,
+      "sha256": "567126c2c34ba9f36c1a51cd79e3fe92e277c538bb939b73f1a7a5b39d7b8bfd"
+    },
+    {
+      "path": "13 - Antares - Nova Warning.json",
+      "bytes": 284219,
+      "sha256": "d458f8d7d07ea77a85747a2337023739b90728adfac98954f427d799ea177a7a"
+    },
+    {
+      "path": "14 - League Diplomacy - Alliance and Aircraft Idea.json",
+      "bytes": 282666,
+      "sha256": "1bfbdb10110a17c2afeee26be18c9522611aba5a97bccb5cebe72934f383731f"
+    },
+    {
+      "path": "15 - Hirachi Capital - Ground Deployment.json",
+      "bytes": 292160,
+      "sha256": "7fb7ec3164032b50827b057ac9c4516dbaecbc2143258fcf73ac438e8a1acca3"
+    },
+    {
+      "path": "16 - Druedian Capital - Ground Deployment.json",
+      "bytes": 287200,
+      "sha256": "b3e302a65021463550e4334a63dc5d0f4f9c3cebd4804bab5e301a012e8133a9"
+    },
+    {
+      "path": "17 - Lisonian Capital - Formation Ready.json",
+      "bytes": 301569,
+      "sha256": "e5980e64eff75ac133e12018615e09511cc42179d785b213ec1f89524fab1b7f"
+    },
+    {
+      "path": "18 - Rigel Expedition - Earth Coordinates Known.json",
+      "bytes": 307763,
+      "sha256": "9557761ac34ca781afb1bac6322881a018078d771289e1f745baaf531c70c2f0"
+    },
+    {
+      "path": "19 - Final Fleet - Equipped and Home Shield Ready.json",
+      "bytes": 308057,
+      "sha256": "ce68268f6c00dd110bda117cd2e02d80566194fde77182d7f61a825901647cbb"
+    },
+    {
+      "path": "20 - Earth - Surveyed Before Final Assault.json",
+      "bytes": 308301,
+      "sha256": "9c7d19359229fb535a525a0b36639a6704675cf89bf80a45aab92684e4bfc9b7"
+    },
+    {
+      "path": "21 - Earth - Final Ground Deployment.json",
+      "bytes": 339255,
+      "sha256": "9bd8ba1e9fe380b20c2ca33570d2406559999387e66345837b260a2ee5044479"
+    },
+    {
+      "path": "22 - Earth - Battle Won Before Victory Film.json",
+      "bytes": 342938,
+      "sha256": "6ac73c46f4dcbeac5576567f6cc6c62f05352638afd26a1c59c000bf69c1fb8a"
+    },
+    {
+      "path": "23 - Victory - Watch the Ending.json",
+      "bytes": 344826,
+      "sha256": "98920829dd869d852c9898a241270b1e5b22eeb4020335e512a1ba1a5ceb6b0f"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 7011,
+      "sha256": "351c4d846c5166ce7cafef0e9574669e8e2dae450f52a48e16cecabf9e1107cc"
+    }
+  ]
+}

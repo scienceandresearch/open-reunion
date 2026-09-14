@@ -1,0 +1,87 @@
+{
+  "version": "0.8.9",
+  "archives": {
+    "dev": {
+      "url": "https://lib.openmpt.org/files/libopenmpt/dev/libopenmpt-0.8.9%2Brelease.dev.windows.vs2022.zip",
+      "path": "local/downloads/libopenmpt-0.8.9-windows.zip",
+      "sha256": "a23e375e576e3a6997ffeeb6cf34488e9020e2a5d8226856b02628b6a87c5e8e"
+    },
+    "source": {
+      "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.8.9%2Brelease.msvc.zip",
+      "path": "third_party/libopenmpt/source-0.8.9-msvc.zip",
+      "sha256": "8d3b3c14b92dd1fcbb31b2bf28ed917c1d3b529b0d9380562d5bdb6256d32bea"
+    }
+  },
+  "files": [
+    {
+      "member": "LICENSE.txt",
+      "path": "third_party/libopenmpt/LICENSE.txt",
+      "sha256": "2c999e99533c10a347916a72e075bacf10fcedeff793bd90d41d812b46161da2"
+    },
+    {
+      "member": "inc/libopenmpt/libopenmpt.h",
+      "path": "third_party/libopenmpt/libopenmpt.h",
+      "sha256": "1db684bd858cd63867052802235908e61037831e52525afb66c8ad486ed954c4"
+    },
+    {
+      "member": "bin/amd64/libopenmpt.dll",
+      "path": "local/native/libopenmpt.dll",
+      "sha256": "9fa3131204f44a3b157f22f9f0ae11c5cccb5befa37e91a2476567aa0f4b0d94"
+    },
+    {
+      "member": "bin/amd64/openmpt-mpg123.dll",
+      "path": "local/native/openmpt-mpg123.dll",
+      "sha256": "f15edd24576d88fa08a153c4a7f9d9d7956449e4fc67758d660ad35d9e1696df"
+    },
+    {
+      "member": "bin/amd64/openmpt-ogg.dll",
+      "path": "local/native/openmpt-ogg.dll",
+      "sha256": "bbeea26588404a00ae964f1c4aceb6d6474e5885f8337491a4c69e29e8516eb6"
+    },
+    {
+      "member": "bin/amd64/openmpt-vorbis.dll",
+      "path": "local/native/openmpt-vorbis.dll",
+      "sha256": "7393d017e2930d57c12c016de21c6fa658f862481758ba394823f6ac5e013df2"
+    },
+    {
+      "member": "bin/amd64/openmpt-zlib.dll",
+      "path": "local/native/openmpt-zlib.dll",
+      "sha256": "966d96e9aaf5cbd9e1b600435af1180a3a643ace17a0e782a5becf378b25445b"
+    },
+    {
+      "member": "Licenses/License.mpg123.Authors.txt",
+      "path": "third_party/libopenmpt/Licenses/License.mpg123.Authors.txt",
+      "sha256": "3cb8483d26e12e0b4fc529c41b52b43aea8e9e508233bcf8f87aac437d53d8a7"
+    },
+    {
+      "member": "Licenses/License.mpg123.txt",
+      "path": "third_party/libopenmpt/Licenses/License.mpg123.txt",
+      "sha256": "87ee627638ad10e7f5de51b603b4b3270d9f0981f444ff19a1054e4284474b34"
+    },
+    {
+      "member": "Licenses/License.mpt.BSD-3-Clause.txt",
+      "path": "third_party/libopenmpt/Licenses/License.mpt.BSD-3-Clause.txt",
+      "sha256": "2c999e99533c10a347916a72e075bacf10fcedeff793bd90d41d812b46161da2"
+    },
+    {
+      "member": "Licenses/License.mpt.BSL-1.0.txt",
+      "path": "third_party/libopenmpt/Licenses/License.mpt.BSL-1.0.txt",
+      "sha256": "beb8e42e9d6b4284e03304d05a81a0755200a965fc8d0a5e0aea1e84cf805d6e"
+    },
+    {
+      "member": "Licenses/License.ogg.txt",
+      "path": "third_party/libopenmpt/Licenses/License.ogg.txt",
+      "sha256": "29460b3b44148114c28cc2480737368428747e68374d16cb8d910949ded03d19"
+    },
+    {
+      "member": "Licenses/License.Vorbis.txt",
+      "path": "third_party/libopenmpt/Licenses/License.Vorbis.txt",
+      "sha256": "1300208dc709bce1f7b1bf5295acb4df8eca42a67a301ce4317c9b901560092a"
+    },
+    {
+      "member": "Licenses/License.zlib.txt",
+      "path": "third_party/libopenmpt/Licenses/License.zlib.txt",
+      "sha256": "37797df3d16eae42cd9c0d1d315b758e1b5deb573f60b471fc5da2c006c4ecd8"
+    }
+  ]
+}

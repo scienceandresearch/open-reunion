@@ -1,0 +1,959 @@
+{
+  "schema": 1,
+  "save_size": 41670,
+  "blocks": [
+    {
+      "save_offset": 0,
+      "length": 20,
+      "kind": "label",
+      "address": null,
+      "code_offset": 61926
+    },
+    {
+      "save_offset": 20,
+      "length": 24,
+      "kind": "ds",
+      "address": 22476,
+      "code_offset": 62004
+    },
+    {
+      "save_offset": 44,
+      "length": 12,
+      "kind": "ds",
+      "address": 22512,
+      "code_offset": 62019
+    },
+    {
+      "save_offset": 56,
+      "length": 795,
+      "kind": "pointer",
+      "address": 31454,
+      "code_offset": 62034
+    },
+    {
+      "save_offset": 851,
+      "length": 2,
+      "kind": "ds",
+      "address": 31458,
+      "code_offset": 62051
+    },
+    {
+      "save_offset": 853,
+      "length": 270,
+      "kind": "ds",
+      "address": 314,
+      "code_offset": 62066
+    },
+    {
+      "save_offset": 1123,
+      "length": 240,
+      "kind": "ds",
+      "address": 1060,
+      "code_offset": 62082
+    },
+    {
+      "save_offset": 1363,
+      "length": 12,
+      "kind": "ds",
+      "address": 25880,
+      "code_offset": 62098
+    },
+    {
+      "save_offset": 1375,
+      "length": 1,
+      "kind": "ds",
+      "address": 30526,
+      "code_offset": 62113
+    },
+    {
+      "save_offset": 1376,
+      "length": 1,
+      "kind": "ds",
+      "address": 30527,
+      "code_offset": 62128
+    },
+    {
+      "save_offset": 1377,
+      "length": 1,
+      "kind": "ds",
+      "address": 30528,
+      "code_offset": 62143
+    },
+    {
+      "save_offset": 1378,
+      "length": 1,
+      "kind": "ds",
+      "address": 30529,
+      "code_offset": 62158
+    },
+    {
+      "save_offset": 1379,
+      "length": 1,
+      "kind": "ds",
+      "address": 30530,
+      "code_offset": 62173
+    },
+    {
+      "save_offset": 1380,
+      "length": 1,
+      "kind": "ds",
+      "address": 30531,
+      "code_offset": 62188
+    },
+    {
+      "save_offset": 1381,
+      "length": 1,
+      "kind": "ds",
+      "address": 30532,
+      "code_offset": 62203
+    },
+    {
+      "save_offset": 1382,
+      "length": 1,
+      "kind": "ds",
+      "address": 30533,
+      "code_offset": 62218
+    },
+    {
+      "save_offset": 1383,
+      "length": 1,
+      "kind": "ds",
+      "address": 30534,
+      "code_offset": 62233
+    },
+    {
+      "save_offset": 1384,
+      "length": 1,
+      "kind": "ds",
+      "address": 30535,
+      "code_offset": 62248
+    },
+    {
+      "save_offset": 1385,
+      "length": 1,
+      "kind": "ds",
+      "address": 30536,
+      "code_offset": 62263
+    },
+    {
+      "save_offset": 1386,
+      "length": 1,
+      "kind": "ds",
+      "address": 30537,
+      "code_offset": 62278
+    },
+    {
+      "save_offset": 1387,
+      "length": 416,
+      "kind": "ds",
+      "address": 6812,
+      "code_offset": 62293
+    },
+    {
+      "save_offset": 1803,
+      "length": 2080,
+      "kind": "ds",
+      "address": 7228,
+      "code_offset": 62309
+    },
+    {
+      "save_offset": 3883,
+      "length": 156,
+      "kind": "ds",
+      "address": 9354,
+      "code_offset": 62325
+    },
+    {
+      "save_offset": 4039,
+      "length": 780,
+      "kind": "ds",
+      "address": 9510,
+      "code_offset": 62341
+    },
+    {
+      "save_offset": 4819,
+      "length": 234,
+      "kind": "ds",
+      "address": 10336,
+      "code_offset": 62357
+    },
+    {
+      "save_offset": 5053,
+      "length": 1170,
+      "kind": "ds",
+      "address": 10570,
+      "code_offset": 62373
+    },
+    {
+      "save_offset": 6223,
+      "length": 91,
+      "kind": "ds",
+      "address": 11768,
+      "code_offset": 62389
+    },
+    {
+      "save_offset": 6314,
+      "length": 455,
+      "kind": "ds",
+      "address": 11860,
+      "code_offset": 62404
+    },
+    {
+      "save_offset": 6769,
+      "length": 169,
+      "kind": "ds",
+      "address": 12344,
+      "code_offset": 62420
+    },
+    {
+      "save_offset": 6938,
+      "length": 845,
+      "kind": "ds",
+      "address": 12514,
+      "code_offset": 62436
+    },
+    {
+      "save_offset": 7783,
+      "length": 299,
+      "kind": "ds",
+      "address": 13424,
+      "code_offset": 62452
+    },
+    {
+      "save_offset": 8082,
+      "length": 1495,
+      "kind": "ds",
+      "address": 13724,
+      "code_offset": 62468
+    },
+    {
+      "save_offset": 9577,
+      "length": 65,
+      "kind": "ds",
+      "address": 15238,
+      "code_offset": 62484
+    },
+    {
+      "save_offset": 9642,
+      "length": 325,
+      "kind": "ds",
+      "address": 15304,
+      "code_offset": 62499
+    },
+    {
+      "save_offset": 9967,
+      "length": 416,
+      "kind": "ds",
+      "address": 15702,
+      "code_offset": 62515
+    },
+    {
+      "save_offset": 10383,
+      "length": 2080,
+      "kind": "ds",
+      "address": 16118,
+      "code_offset": 62531
+    },
+    {
+      "save_offset": 12463,
+      "length": 64,
+      "kind": "ds",
+      "address": 18390,
+      "code_offset": 62547
+    },
+    {
+      "save_offset": 12527,
+      "length": 8,
+      "kind": "ds",
+      "address": 18454,
+      "code_offset": 62562
+    },
+    {
+      "save_offset": 12535,
+      "length": 16,
+      "kind": "ds",
+      "address": 18462,
+      "code_offset": 62577
+    },
+    {
+      "save_offset": 12551,
+      "length": 2,
+      "kind": "ds",
+      "address": 18478,
+      "code_offset": 62592
+    },
+    {
+      "save_offset": 12553,
+      "length": 2,
+      "kind": "ds",
+      "address": 31460,
+      "code_offset": 62607
+    },
+    {
+      "save_offset": 12555,
+      "length": 16,
+      "kind": "ds",
+      "address": 31462,
+      "code_offset": 62622
+    },
+    {
+      "save_offset": 12571,
+      "length": 16,
+      "kind": "ds",
+      "address": 31478,
+      "code_offset": 62637
+    },
+    {
+      "save_offset": 12587,
+      "length": 2,
+      "kind": "ds",
+      "address": 37494,
+      "code_offset": 62652
+    },
+    {
+      "save_offset": 12589,
+      "length": 2,
+      "kind": "ds",
+      "address": 37496,
+      "code_offset": 62667
+    },
+    {
+      "save_offset": 12591,
+      "length": 1855,
+      "kind": "ds",
+      "address": 23980,
+      "code_offset": 62682
+    },
+    {
+      "save_offset": 14446,
+      "length": 2,
+      "kind": "ds",
+      "address": 38304,
+      "code_offset": 62698
+    },
+    {
+      "save_offset": 14448,
+      "length": 2,
+      "kind": "ds",
+      "address": 38306,
+      "code_offset": 62713
+    },
+    {
+      "save_offset": 14450,
+      "length": 8,
+      "kind": "ds",
+      "address": 38308,
+      "code_offset": 62728
+    },
+    {
+      "save_offset": 14458,
+      "length": 8,
+      "kind": "ds",
+      "address": 38316,
+      "code_offset": 62743
+    },
+    {
+      "save_offset": 14466,
+      "length": 2,
+      "kind": "ds",
+      "address": 38324,
+      "code_offset": 62758
+    },
+    {
+      "save_offset": 14468,
+      "length": 8,
+      "kind": "ds",
+      "address": 38326,
+      "code_offset": 62773
+    },
+    {
+      "save_offset": 14476,
+      "length": 4,
+      "kind": "ds",
+      "address": 38334,
+      "code_offset": 62788
+    },
+    {
+      "save_offset": 14480,
+      "length": 24,
+      "kind": "ds",
+      "address": 38342,
+      "code_offset": 62803
+    },
+    {
+      "save_offset": 14504,
+      "length": 2,
+      "kind": "ds",
+      "address": 38366,
+      "code_offset": 62818
+    },
+    {
+      "save_offset": 14506,
+      "length": 2,
+      "kind": "ds",
+      "address": 38368,
+      "code_offset": 62833
+    },
+    {
+      "save_offset": 14508,
+      "length": 2,
+      "kind": "ds",
+      "address": 38370,
+      "code_offset": 62848
+    },
+    {
+      "save_offset": 14510,
+      "length": 2,
+      "kind": "ds",
+      "address": 38372,
+      "code_offset": 62863
+    },
+    {
+      "save_offset": 14512,
+      "length": 2,
+      "kind": "ds",
+      "address": 41498,
+      "code_offset": 62878
+    },
+    {
+      "save_offset": 14514,
+      "length": 160,
+      "kind": "ds",
+      "address": 41500,
+      "code_offset": 62893
+    },
+    {
+      "save_offset": 14674,
+      "length": 2,
+      "kind": "ds",
+      "address": 41664,
+      "code_offset": 62909
+    },
+    {
+      "save_offset": 14676,
+      "length": 14000,
+      "kind": "pointer",
+      "address": 41660,
+      "code_offset": 62924
+    },
+    {
+      "save_offset": 28676,
+      "length": 2508,
+      "kind": "ds",
+      "address": 27598,
+      "code_offset": 62941
+    },
+    {
+      "save_offset": 31184,
+      "length": 2,
+      "kind": "ds",
+      "address": 41666,
+      "code_offset": 62957
+    },
+    {
+      "save_offset": 31186,
+      "length": 2,
+      "kind": "ds",
+      "address": 41668,
+      "code_offset": 62972
+    },
+    {
+      "save_offset": 31188,
+      "length": 2,
+      "kind": "ds",
+      "address": 41670,
+      "code_offset": 62987
+    },
+    {
+      "save_offset": 31190,
+      "length": 2,
+      "kind": "ds",
+      "address": 41672,
+      "code_offset": 63002
+    },
+    {
+      "save_offset": 31192,
+      "length": 2,
+      "kind": "ds",
+      "address": 41674,
+      "code_offset": 63017
+    },
+    {
+      "save_offset": 31194,
+      "length": 2,
+      "kind": "ds",
+      "address": 41676,
+      "code_offset": 63032
+    },
+    {
+      "save_offset": 31196,
+      "length": 2,
+      "kind": "ds",
+      "address": 41678,
+      "code_offset": 63047
+    },
+    {
+      "save_offset": 31198,
+      "length": 10304,
+      "kind": "pointer",
+      "address": 41680,
+      "code_offset": 63062
+    },
+    {
+      "save_offset": 41502,
+      "length": 1,
+      "kind": "ds",
+      "address": 41684,
+      "code_offset": 63079
+    },
+    {
+      "save_offset": 41503,
+      "length": 4,
+      "kind": "ds",
+      "address": 41686,
+      "code_offset": 63094
+    },
+    {
+      "save_offset": 41507,
+      "length": 70,
+      "kind": "ds",
+      "address": 37280,
+      "code_offset": 63109
+    },
+    {
+      "save_offset": 41577,
+      "length": 2,
+      "kind": "ds",
+      "address": 37354,
+      "code_offset": 63124
+    },
+    {
+      "save_offset": 41579,
+      "length": 1,
+      "kind": "ds",
+      "address": 23868,
+      "code_offset": 63139
+    },
+    {
+      "save_offset": 41580,
+      "length": 1,
+      "kind": "ds",
+      "address": 23869,
+      "code_offset": 63154
+    },
+    {
+      "save_offset": 41581,
+      "length": 1,
+      "kind": "ds",
+      "address": 23870,
+      "code_offset": 63169
+    },
+    {
+      "save_offset": 41582,
+      "length": 1,
+      "kind": "ds",
+      "address": 23871,
+      "code_offset": 63184
+    },
+    {
+      "save_offset": 41583,
+      "length": 2,
+      "kind": "ds",
+      "address": 23872,
+      "code_offset": 63199
+    },
+    {
+      "save_offset": 41585,
+      "length": 2,
+      "kind": "ds",
+      "address": 23874,
+      "code_offset": 63214
+    },
+    {
+      "save_offset": 41587,
+      "length": 2,
+      "kind": "ds",
+      "address": 23876,
+      "code_offset": 63229
+    },
+    {
+      "save_offset": 41589,
+      "length": 2,
+      "kind": "ds",
+      "address": 23878,
+      "code_offset": 63244
+    },
+    {
+      "save_offset": 41591,
+      "length": 1,
+      "kind": "ds",
+      "address": 23880,
+      "code_offset": 63259
+    },
+    {
+      "save_offset": 41592,
+      "length": 2,
+      "kind": "ds",
+      "address": 23882,
+      "code_offset": 63274
+    },
+    {
+      "save_offset": 41594,
+      "length": 1,
+      "kind": "ds",
+      "address": 23884,
+      "code_offset": 63289
+    },
+    {
+      "save_offset": 41595,
+      "length": 2,
+      "kind": "ds",
+      "address": 23886,
+      "code_offset": 63304
+    },
+    {
+      "save_offset": 41597,
+      "length": 1,
+      "kind": "ds",
+      "address": 23888,
+      "code_offset": 63319
+    },
+    {
+      "save_offset": 41598,
+      "length": 2,
+      "kind": "ds",
+      "address": 23890,
+      "code_offset": 63334
+    },
+    {
+      "save_offset": 41600,
+      "length": 2,
+      "kind": "ds",
+      "address": 23892,
+      "code_offset": 63349
+    },
+    {
+      "save_offset": 41602,
+      "length": 1,
+      "kind": "ds",
+      "address": 23894,
+      "code_offset": 63364
+    },
+    {
+      "save_offset": 41603,
+      "length": 2,
+      "kind": "ds",
+      "address": 23896,
+      "code_offset": 63379
+    },
+    {
+      "save_offset": 41605,
+      "length": 1,
+      "kind": "ds",
+      "address": 23898,
+      "code_offset": 63394
+    },
+    {
+      "save_offset": 41606,
+      "length": 2,
+      "kind": "ds",
+      "address": 23900,
+      "code_offset": 63409
+    },
+    {
+      "save_offset": 41608,
+      "length": 1,
+      "kind": "ds",
+      "address": 23902,
+      "code_offset": 63424
+    },
+    {
+      "save_offset": 41609,
+      "length": 2,
+      "kind": "ds",
+      "address": 23904,
+      "code_offset": 63439
+    },
+    {
+      "save_offset": 41611,
+      "length": 1,
+      "kind": "ds",
+      "address": 23906,
+      "code_offset": 63454
+    },
+    {
+      "save_offset": 41612,
+      "length": 2,
+      "kind": "ds",
+      "address": 23908,
+      "code_offset": 63469
+    },
+    {
+      "save_offset": 41614,
+      "length": 1,
+      "kind": "ds",
+      "address": 23910,
+      "code_offset": 63484
+    },
+    {
+      "save_offset": 41615,
+      "length": 1,
+      "kind": "ds",
+      "address": 23911,
+      "code_offset": 63499
+    },
+    {
+      "save_offset": 41616,
+      "length": 1,
+      "kind": "ds",
+      "address": 23912,
+      "code_offset": 63514
+    },
+    {
+      "save_offset": 41617,
+      "length": 2,
+      "kind": "ds",
+      "address": 23914,
+      "code_offset": 63529
+    },
+    {
+      "save_offset": 41619,
+      "length": 1,
+      "kind": "ds",
+      "address": 23916,
+      "code_offset": 63544
+    },
+    {
+      "save_offset": 41620,
+      "length": 1,
+      "kind": "ds",
+      "address": 23917,
+      "code_offset": 63559
+    },
+    {
+      "save_offset": 41621,
+      "length": 2,
+      "kind": "ds",
+      "address": 23918,
+      "code_offset": 63574
+    },
+    {
+      "save_offset": 41623,
+      "length": 1,
+      "kind": "ds",
+      "address": 23920,
+      "code_offset": 63589
+    },
+    {
+      "save_offset": 41624,
+      "length": 1,
+      "kind": "ds",
+      "address": 23921,
+      "code_offset": 63604
+    },
+    {
+      "save_offset": 41625,
+      "length": 2,
+      "kind": "ds",
+      "address": 23922,
+      "code_offset": 63619
+    },
+    {
+      "save_offset": 41627,
+      "length": 1,
+      "kind": "ds",
+      "address": 23924,
+      "code_offset": 63634
+    },
+    {
+      "save_offset": 41628,
+      "length": 1,
+      "kind": "ds",
+      "address": 23925,
+      "code_offset": 63649
+    },
+    {
+      "save_offset": 41629,
+      "length": 2,
+      "kind": "ds",
+      "address": 23926,
+      "code_offset": 63664
+    },
+    {
+      "save_offset": 41631,
+      "length": 1,
+      "kind": "ds",
+      "address": 23928,
+      "code_offset": 63679
+    },
+    {
+      "save_offset": 41632,
+      "length": 2,
+      "kind": "ds",
+      "address": 23930,
+      "code_offset": 63694
+    },
+    {
+      "save_offset": 41634,
+      "length": 1,
+      "kind": "ds",
+      "address": 23932,
+      "code_offset": 63709
+    },
+    {
+      "save_offset": 41635,
+      "length": 2,
+      "kind": "ds",
+      "address": 23934,
+      "code_offset": 63724
+    },
+    {
+      "save_offset": 41637,
+      "length": 1,
+      "kind": "ds",
+      "address": 23936,
+      "code_offset": 63739
+    },
+    {
+      "save_offset": 41638,
+      "length": 2,
+      "kind": "ds",
+      "address": 23938,
+      "code_offset": 63754
+    },
+    {
+      "save_offset": 41640,
+      "length": 1,
+      "kind": "ds",
+      "address": 23940,
+      "code_offset": 63769
+    },
+    {
+      "save_offset": 41641,
+      "length": 2,
+      "kind": "ds",
+      "address": 23942,
+      "code_offset": 63784
+    },
+    {
+      "save_offset": 41643,
+      "length": 1,
+      "kind": "ds",
+      "address": 23944,
+      "code_offset": 63799
+    },
+    {
+      "save_offset": 41644,
+      "length": 2,
+      "kind": "ds",
+      "address": 23946,
+      "code_offset": 63814
+    },
+    {
+      "save_offset": 41646,
+      "length": 1,
+      "kind": "ds",
+      "address": 23948,
+      "code_offset": 63829
+    },
+    {
+      "save_offset": 41647,
+      "length": 2,
+      "kind": "ds",
+      "address": 23950,
+      "code_offset": 63844
+    },
+    {
+      "save_offset": 41649,
+      "length": 1,
+      "kind": "ds",
+      "address": 23952,
+      "code_offset": 63859
+    },
+    {
+      "save_offset": 41650,
+      "length": 1,
+      "kind": "ds",
+      "address": 23953,
+      "code_offset": 63874
+    },
+    {
+      "save_offset": 41651,
+      "length": 2,
+      "kind": "ds",
+      "address": 23954,
+      "code_offset": 63889
+    },
+    {
+      "save_offset": 41653,
+      "length": 1,
+      "kind": "ds",
+      "address": 23956,
+      "code_offset": 63904
+    },
+    {
+      "save_offset": 41654,
+      "length": 1,
+      "kind": "ds",
+      "address": 23957,
+      "code_offset": 63919
+    },
+    {
+      "save_offset": 41655,
+      "length": 2,
+      "kind": "ds",
+      "address": 23958,
+      "code_offset": 63934
+    },
+    {
+      "save_offset": 41657,
+      "length": 1,
+      "kind": "ds",
+      "address": 23960,
+      "code_offset": 63949
+    },
+    {
+      "save_offset": 41658,
+      "length": 1,
+      "kind": "ds",
+      "address": 23961,
+      "code_offset": 63964
+    },
+    {
+      "save_offset": 41659,
+      "length": 1,
+      "kind": "ds",
+      "address": 23962,
+      "code_offset": 63979
+    },
+    {
+      "save_offset": 41660,
+      "length": 2,
+      "kind": "ds",
+      "address": 23964,
+      "code_offset": 63994
+    },
+    {
+      "save_offset": 41662,
+      "length": 2,
+      "kind": "ds",
+      "address": 23966,
+      "code_offset": 64009
+    },
+    {
+      "save_offset": 41664,
+      "length": 2,
+      "kind": "ds",
+      "address": 23968,
+      "code_offset": 64024
+    },
+    {
+      "save_offset": 41666,
+      "length": 4,
+      "kind": "ds",
+      "address": 23970,
+      "code_offset": 64039
+    }
+  ],
+  "evidence": "Contiguous serializer instructions 0xF234..0xFA35; initial 20-byte label at 0xF1E6."
+}
