@@ -6,6 +6,9 @@ older private builds are preserved outside it.
 
 ## Current state
 
+- Private repository: https://github.com/scienceandresearch/open-reunion.
+  Issues and Discussions are enabled. Visibility must stay private unless the
+  owner explicitly requests a change.
 - Playable beta, game version 0.38.0a8, with the original accepted unassisted
   graphical New Game-to-victory route. Broader player feedback is still needed.
 - Offline first-run asset importer; the complete supported original English
@@ -30,6 +33,12 @@ folder rename preserves that pipeline. Asset-free Windows r2 with checkpoints
 passes the frozen graphical self-test. Repository guard tests cover original
 media, private paths, disguised binary data, unapproved archives and staged
 blobs that differ from their working copies.
+
+A fresh Windows r2 extraction completed the actual original-file import without
+executing the original program or importing personal saves. Its first graphical
+check failed at the Space-key assertion; a separate run against the same fresh
+import passed every frozen check with process audio muted. This input-sensitive
+test failure is retained in the private verification record.
 
 The technical content audit covers file selection, known asset payloads,
 embedded-data review, checkpoint logs and the pinned licensed dependency ZIP.

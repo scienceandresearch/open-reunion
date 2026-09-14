@@ -13,7 +13,7 @@ from openreunion.dos.assets import Picture
 
 class StoryCacheTests(unittest.TestCase):
     def source(self,directory):
-        source=ContentSource.__new__(ContentSource);source.root=Path(directory);source.bundled=False
+        source=ContentSource.__new__(ContentSource);source.root=Path(directory).resolve();source.bundled=False
         source.catalog={'story_cinema':rules()};source.story_animation_cache={}
         source.indexed_picture=Mock(return_value=Picture(3,1,b'\0'*3,bytes(range(256))*3))
         folder=source.root/'ANIM';folder.mkdir()

@@ -15,10 +15,10 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
         with:
           python-version: ${{ matrix.python }}
-      - name: Audit exact tracked files and checkpoints
-        run: |
-          python tools/audit_repository.py --staged
-          python tools/check_checkpoints.py
+      - name: Audit exact tracked files
+        run: python tools/audit_repository.py --staged
+      - name: Validate checkpoint collection
+        run: python tools/check_checkpoints.py
       - name: Synthetic unit tests (no original game files)
         env:
           PYTHONPATH: src

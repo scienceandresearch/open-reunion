@@ -71,7 +71,7 @@ class SampleTests(unittest.TestCase):
     def test_content_names_allow_original_hyphen_and_reject_path_traversal(self):
         from openreunion.dos.content import ContentSource
         with tempfile.TemporaryDirectory() as directory:
-            source=object.__new__(ContentSource);source.root=Path(directory);source.bundled=False
+            source=object.__new__(ContentSource);source.root=Path(directory).resolve();source.bundled=False
             (source.root/'SOUND').mkdir();(source.root/'SOUND/CLICK-OK.SMP').write_bytes(block())
             self.assertEqual(source.sample('click-ok'),decode_sample(block()))
             for name,folder in (('../X','SOUND'),('X','../SOUND'),('X/Y','SOUND'),('X\\Y','SOUND')):

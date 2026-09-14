@@ -40,6 +40,8 @@ maintainer outside the repository; no raw research evidence is required for CI.
 
 ## Publishing and contact
 
+Repository: https://github.com/scienceandresearch/open-reunion.
+
 The owner requested a PRIVATE GitHub repository. Do not change its visibility
 without explicit permission. Git commits use a GitHub noreply identity; do not
 replace it with a personal email. The rights-holder issue template and README
