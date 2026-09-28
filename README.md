@@ -12,7 +12,7 @@ Open Reunion keeps the original game's look and core gameplay, with some small i
 
 The repository contains the source code. **There is no prebuilt Windows download on GitHub yet.** You can run the game from source using the steps below, or [build a Windows package](docs/SOURCE-QUICKSTART.md#build-a-windows-package).
 
-You'll need Python **3.11 or newer with Tcl/Tk**. Windows supports the full native audio setup.
+You'll need Python **3.11 or newer with Tcl/Tk**. Windows is the tested platform; the bundled module-audio installer requires 64-bit Python on Windows. macOS and Linux are not yet verified for full gameplay and audio. See the [Python setup check](docs/SOURCE-QUICKSTART.md#check-your-setup) before starting.
 
 Clone the repository, or use **Code > Download ZIP** and extract it:
 
@@ -20,6 +20,8 @@ Clone the repository, or use **Code > Download ZIP** and extract it:
 git clone https://github.com/scienceandresearch/open-reunion.git
 cd open-reunion
 ```
+
+If you downloaded the ZIP, open the extracted folder containing `run.py`. Open PowerShell in that folder (right-click in the folder and choose **Open in Terminal**). Run all commands below from there. Git is only needed for the clone command.
 
 For full music playback, install the audio libraries. The second command needs `clang` or `cc` on your PATH:
 
@@ -36,7 +38,7 @@ Double-click **Import-Assets.cmd** and choose your original Reunion folder. Wait
 python run.py import-assets "C:\Games\Reunion" --output local/recovered --play
 ```
 
-After setup, use **Import-Assets.cmd** again or run:
+After setup, double-click **Launch.cmd** (or **Import-Assets.cmd**) again, or run:
 
 ```powershell
 python run.py recover local/recovered --original-ui

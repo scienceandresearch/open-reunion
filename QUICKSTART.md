@@ -13,7 +13,8 @@ From a source checkout, install Python 3.11 or newer with Tcl/Tk and follow the
 2. Click **Continue to game**, then choose **New Game** and your character.
 3. Press **Space** to start time. Press it again to pause.
 
-On later launches, use the same launcher. It reuses your imported files.
+On later launches from source, use **Launch.cmd** or **Import-Assets.cmd**.
+In a Windows package, use **OpenReunion.exe**. It reuses your imported files.
 
 ## Save and explore
 

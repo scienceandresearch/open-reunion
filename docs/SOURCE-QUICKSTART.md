@@ -6,7 +6,18 @@ libraries and packaged executable.
 
 ## Check your setup
 
-From the repository folder:
+Install Python from [python.org](https://www.python.org/downloads/windows/). On Windows, use the 64-bit version for the audio decoder and include Tcl/Tk. Make sure `python` is available in your terminal, then reopen the terminal after installation.
+
+From the repository folder, check Python and its graphical toolkit:
+
+```powershell
+python --version
+python -m tkinter
+```
+
+The second command should open a small test window; close it before continuing. If `python` is not recognized or opens the Microsoft Store, fix your Python installation/PATH first. If `tkinter` is missing, install Python with Tcl/Tk support. No `pip install` step is needed to play from source.
+
+Then check the project:
 
 ```powershell
 python run.py --help
@@ -21,7 +32,7 @@ test files aren't available. Playing the game requires your original assets.
 
 ## Audio
 
-Install the Windows module decoder:
+Install the module decoder using 64-bit Python on Windows:
 
 ```powershell
 python tools/install_module_audio.py
@@ -57,7 +68,7 @@ python run.py import-assets "C:\Games\Reunion" --output local/recovered --play
 Replace the example path with your own. The original executable alone isn't
 enough; see the [import guide](ASSET-IMPORT.md) for the required files.
 
-For later launches:
+For later launches, double-click **Launch.cmd** or **Import-Assets.cmd**, or run:
 
 ```powershell
 python run.py recover local/recovered --original-ui
@@ -109,3 +120,9 @@ python tools/audit_repository.py --staged
 GitHub Actions repeats the source audit, checkpoint validation and unit suite
 on Windows with Python 3.11 and 3.14. Review release attachments separately;
 see [content and rights](CONTENT-POLICY.md).
+
+## Developer launch modes
+
+All root-level `.cmd` launchers open the player import/game flow. For the older
+prototype, use `python run.py play`. For the diagnostic recovered-data interface,
+use `python run.py recover local/recovered` without `--original-ui`.
